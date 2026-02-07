@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
 from fastapi.responses import PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 from app.api import auth, questions, users
+from app.utils.middleware import LoggingMiddleware
 from app.database import engine, Base
 from app.api.auth import get_current_user
 from app.models import User
@@ -26,6 +27,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.add_middleware(LoggingMiddleware)
 
 @app.get("/")
 async def root():

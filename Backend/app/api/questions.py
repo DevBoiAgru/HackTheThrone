@@ -36,7 +36,7 @@ async def get_question(question_num: int, db: Session = Depends(get_db), current
         ).first()
         if not prev_completed:
             raise HTTPException(status_code=403, detail="Question locked. Complete previous questions first.")
-            
+    question["correct_answer"] = None
     return question
 
 @router.post("/validate")
