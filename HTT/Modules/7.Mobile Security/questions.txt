@@ -1,0 +1,802 @@
+Mobile Security
+
+
+		1. Why Mobile Security Is Uniquely Dangerous
+
+1. Why are mobile devices higher-risk than desktops?
+A. They are weaker hardware
+B. They combine identity, location, sensors, and authentication in one object
+C. They don’t use encryption
+D. They lack updates
+
+Answer: B
+
+2. What makes mobile compromise more damaging?
+A. Bigger screens
+B. Phones act as identity hubs for accounts and recovery
+C. Lower storage
+D. Fewer apps
+
+Answer: B
+
+3. Why is mobile loss equivalent to identity exposure?
+A. Phones store photos
+B. Devices stay logged in and hold authentication tokens
+C. Screens are touch-based
+D. They are always online
+
+Answer: B
+
+4. What user behavior increases mobile risk most?
+A. Short battery life
+B. Treating phones as “safe by default”
+C. Using apps
+D. Touch input
+
+Answer: B
+
+5. Why do attackers prefer mobile targets now?
+A. Phones are slower
+B. Users trust phones more and monitor them less
+C. Mobile malware is louder
+D. App stores block malware
+
+Answer: B
+
+6. What is the core mobile security paradox?
+A. Powerful but slow
+B. Highly secure systems undermined by user behavior
+C. Encrypted but offline
+D. Simple but ineffective
+
+Answer: B
+
+		2. Mobile Operating System Architecture (Why It Mostly Works)
+
+1. What is the primary mobile OS security design principle?
+A. Speed
+B. App sandboxing and isolation
+C. Open access
+D. Shared memory
+
+Answer: B
+
+2. What does sandboxing prevent?
+A. App installation
+B. Apps accessing each other’s data directly
+C. Network access
+D. App updates
+
+Answer: B
+
+3. Why do permissions exist in mobile OSs?
+A. To annoy users
+B. To control access to sensitive resources
+C. To improve UI
+D. To slow apps
+
+Answer: B
+
+4. Why does this architecture “mostly” work?
+A. Apps are trusted
+B. It limits blast radius even when an app is compromised
+C. Malware is rare
+D. Users read permissions
+
+Answer: B
+
+5. Where does the model break down?
+A. Hardware failure
+B. Over-permissioned apps and user consent fatigue
+C. Encryption strength
+D. OS updates
+
+Answer: B
+
+6. Why are OS updates critical?
+A. New emojis
+B. They patch vulnerabilities at the system level
+C. Faster charging
+D. UI redesign
+
+Answer: B
+
+		3. Mobile Malware: Same Goals, Different Tactics
+
+1. What goal do mobile and desktop malware share?
+A. UI modification
+B. Data theft, surveillance, or monetization
+C. Battery drain
+D. App crashes
+
+Answer: B
+
+2. Why does mobile malware focus heavily on permissions?
+A. Permissions are cosmetic
+B. Permissions gate sensors, messages, and identity
+C. They slow systems
+D. They block updates
+
+Answer: B
+
+3. Which tactic is common in mobile malware?
+A. BIOS infection
+B. Malicious apps disguised as utilities
+C. Boot sector attacks
+D. Printer exploits
+
+Answer: B
+
+4. Why is mobile malware often stealthy?
+A. Phones are slow
+B. Users rarely inspect background behavior
+C. Antivirus is absent
+D. Apps are encrypted
+
+Answer: B
+
+5. What is “premium SMS fraud”?
+A. Message encryption
+B. Malware sending paid SMS silently
+C. Spam detection
+D. SIM encryption
+
+Answer: B
+
+6. Why is mobile malware harder to notice?
+A. Smaller screens
+B. Effects are subtle and spread over time
+C. No logging
+D. Apps can’t run in background
+
+Answer: B
+
+		4. App Stores: Gatekeepers, Not Gods
+
+1. What is the primary role of app stores?
+A. Marketing
+B. Initial vetting and distribution control
+C. Runtime security
+D. Identity verification
+
+Answer: B
+
+2. Why aren’t app stores perfect protection?
+A. They don’t scan apps
+B. Malicious behavior can be delayed or hidden
+C. Apps aren’t reviewed
+D. Users can’t report apps
+
+Answer: B
+
+3. What increases risk even within official stores?
+A. App popularity
+B. Overbroad permissions
+C. App updates
+D. Encryption
+
+Answer: B
+
+4. Why are sideloaded apps risky?
+A. They are slower
+B. They bypass store vetting entirely
+C. They lack UI
+D. They block permissions
+
+Answer: B
+
+5. What is a common attack pattern?
+A. Malware at install time
+B. Clean app → malicious update later
+C. Store breach
+D. OS compromise
+
+Answer: B
+
+6. Best mindset for app stores?
+A. Blind trust
+B. Trust but verify permissions and behavior
+C. Avoid all apps
+D. Only use paid apps
+
+Answer: B
+
+		5. Sensors: The Hidden Attack Surface
+
+1. Why are sensors dangerous?
+A. They drain battery
+B. They provide continuous environmental data
+C. They are encrypted
+D. They are visible
+
+Answer: B
+
+2. Which sensor can leak location indirectly?
+A. Accelerometer
+B. Gyroscope
+C. Microphone
+D. All of the above
+
+Answer: D
+
+3. Why don’t users notice sensor abuse?
+A. Sensors require pop-ups
+B. Many sensors don’t require explicit permission
+C. Sensors are logged
+D. Sensors are encrypted
+
+Answer: B
+
+4. How can microphones be abused?
+A. File deletion
+B. Passive surveillance
+C. Battery charging
+D. Screen capture
+
+Answer: B
+
+5. What is the real danger of sensor fusion?
+A. Battery drain
+B. Multiple low-risk sensors combine into high-risk inference
+C. OS crash
+D. UI lag
+
+Answer: B
+
+6. Best defense against sensor abuse?
+A. Disable phone
+B. Review permissions and limit background access
+C. Use VPN
+D. Enable Bluetooth
+
+Answer: B
+
+		6. Network Threats on Mobile
+
+1. Why are mobile networks risky?
+A. Slow speeds
+B. Frequent switching between networks
+C. Encryption absence
+D. Device overheating
+
+Answer: B
+
+2. What risk does auto-connect introduce?
+A. Faster browsing
+B. Connection to malicious networks
+C. Better signal
+D. Reduced data use
+
+Answer: B
+
+3. Why is HTTPS critical on mobile?
+A. UI consistency
+B. Prevents interception of traffic
+C. App installation
+D. OS updates
+
+Answer: B
+
+4. What makes mobile MITM attacks easier?
+A. Larger screens
+B. Public Wi-Fi usage
+C. App sandboxing
+D. OS encryption
+
+Answer: B
+
+5. What does a VPN protect against?
+A. Malware installation
+B. Network-level eavesdropping
+C. App permissions
+D. Physical theft
+
+Answer: B
+
+6. Best network habit on mobile?
+A. Auto-connect everywhere
+B. Disable unused radios
+C. Use open hotspots
+D. Ignore warnings
+
+Answer: B
+
+		7. SMS: The Weakest Link Still Standing
+
+1. Why is SMS insecure?
+A. Messages are slow
+B. No strong sender authentication
+C. Messages are encrypted
+D. SIM cards are safe
+
+Answer: B
+
+2. Why is SMS still used for 2FA?
+A. It’s secure
+B. Universal reach and low cost
+C. User preference
+D. Legal requirement
+
+Answer: B
+
+3. What is SIM swapping?
+A. Phone repair
+B. Transferring a number to attacker-controlled SIM
+C. Device cloning
+D. Malware technique
+
+Answer: B
+
+4. Why is SMS interception dangerous?
+A. Spam increase
+B. Account takeover via OTPs
+C. Battery drain
+D. App crash
+
+Answer: B
+
+5. What is a safer alternative to SMS 2FA?
+A. Email codes
+B. Authenticator apps or hardware keys
+C. Password reuse
+D. Security questions
+
+Answer: B
+
+6. Best habit regarding SMS?
+A. Trust all messages
+B. Treat SMS as untrusted input
+C. Save OTPs
+D. Forward codes
+
+Answer: B
+
+		8. Bluetooth, NFC, and Proximity Attacks
+
+1. Why are proximity attacks dangerous?
+A. They require malware
+B. Physical closeness lowers suspicion
+C. They are loud
+D. They drain battery
+
+Answer: B
+
+2. What risk does always-on Bluetooth introduce?
+A. Faster pairing
+B. Device discovery and exploitation
+C. Better audio
+D. Secure transfer
+
+Answer: B
+
+3. NFC attacks rely on what assumption?
+A. Long-range access
+B. Trust in short physical distance
+C. Encryption failure
+D. OS bugs
+
+Answer: B
+
+4. What is “bluejacking”?
+A. SMS attack
+B. Sending unsolicited Bluetooth messages
+C. NFC payment
+D. Malware update
+
+Answer: B
+
+5. Why are proximity attacks hard to detect?
+A. No logs
+B. Brief interaction windows
+C. OS alerts
+D. Encryption
+
+Answer: B
+
+6. Best habit?
+A. Leave radios on
+B. Disable Bluetooth/NFC when not needed
+C. Pair publicly
+D. Accept all requests
+
+Answer: B
+
+		9. Lock Screens: Small Feature, Massive Impact
+
+1. Why is the lock screen critical?
+A. Aesthetic
+B. First line of defense against physical access
+C. App management
+D. Encryption
+
+Answer: B
+
+2. What weakens lock screen security most?
+A. Long PIN
+B. Simple patterns or short PINs
+C. Biometrics
+D. Auto-lock
+
+Answer: B
+
+3. Why is auto-lock timing important?
+A. Battery
+B. Reduces window of unauthorized access
+C. UI
+D. Notifications
+
+Answer: B
+
+4. What risk do lock screen notifications pose?
+A. Spam
+B. Data leakage without unlocking
+C. Battery drain
+D. UI clutter
+
+Answer: B
+
+5. Why is swipe-only lock dangerous?
+A. Slow
+B. No authentication barrier
+C. UI bug
+D. OS flaw
+
+Answer: B
+
+6. Best lock screen habit?
+A. Convenience first
+B. Strong lock + short auto-lock delay
+C. No lock
+D. Gesture unlock only
+
+Answer: B
+
+		10. Biometrics: Strong Convenience, Conditional Security
+
+1. What is the strength of biometrics?
+A. Perfect security
+B. Convenience and resistance to guessing
+C. Encryption
+D. Anonymity
+
+Answer: B
+
+2. Why are biometrics conditional?
+A. They expire
+B. They rely on hardware, OS, and fallback methods
+C. They are slow
+D. They require internet
+
+Answer: B
+
+3. What happens if biometrics fail?
+A. Device locks forever
+B. Fallback to PIN/password
+C. Data deletes
+D. OS resets
+
+Answer: B
+
+4. Why can biometrics be risky in coercive situations?
+A. They drain battery
+B. They can be forced physically
+C. They break encryption
+D. They update slowly
+
+Answer: B
+
+5. Best biometric practice?
+A. Biometric only
+B. Strong fallback PIN + biometric
+C. Disable PIN
+D. Face unlock everywhere
+
+Answer: B
+
+6. What is biometrics really protecting?
+A. Identity
+B. Convenience layered over cryptographic security
+C. Sensors
+D. Apps
+
+Answer: B
+
+		11. Mobile Payments and Wallets
+
+1. Why are mobile wallets attractive targets?
+A. UI design
+B. Direct financial access
+C. Battery drain
+D. App size
+
+Answer: B
+
+2. Why are mobile wallets generally secure?
+A. Password storage
+B. Tokenization and hardware-backed security
+C. Obscurity
+D. App store trust
+
+Answer: B
+
+3. What weakens wallet security most?
+A. NFC
+B. Weak lock screen
+C. Encryption
+D. Updates
+
+Answer: B
+
+4. Why is device compromise dangerous for payments?
+A. Slower apps
+B. Authentication tokens may be abused
+C. UI glitch
+D. Battery loss
+
+Answer: B
+
+5. Best payment habit?
+A. Auto-pay everywhere
+B. Require unlock/authentication for each transaction
+C. Save cards in apps
+D. Disable alerts
+
+Answer: B
+
+6. Why should lost phones be wiped immediately?
+A. Storage
+B. Prevent payment abuse
+C. UI reset
+D. OS updates
+
+Answer: B
+
+		12. Physical Access: The Silent Killer
+
+1. Why is physical access so dangerous?
+A. Devices break
+B. It bypasses many digital defenses
+C. Internet stops
+D. Encryption increases
+
+Answer: B
+
+2. What attack becomes trivial with unlocked access?
+A. Network sniffing
+B. Account takeover
+C. Encryption cracking
+D. App store compromise
+
+Answer: B
+
+3. Why are “trusted environments” risky?
+A. Comfort
+B. Reduced vigilance
+C. Encryption
+D. OS bugs
+
+Answer: B
+
+4. Best physical security habit?
+A. Trust people
+B. Never leave devices unattended unlocked
+C. Share PINs
+D. Disable lock
+
+Answer: B
+
+5. Why are stolen phones often worse than lost ones?
+A. Cost
+B. Malicious intent
+C. Battery drain
+D. OS reset
+
+Answer: B
+
+6. What should be enabled for physical theft response?
+A. Bluetooth
+B. Remote lock and wipe
+C. Auto-connect Wi-Fi
+D. Location sharing public
+
+Answer: B
+
+		13. Backup and Cloud Sync Risks
+
+1. Why can backups increase risk?
+A. Storage cost
+B. They replicate sensitive data widely
+C. Slow restore
+D. UI clutter
+
+Answer: B
+
+2. What is the biggest cloud sync risk?
+A. Downtime
+B. Account compromise exposes all synced data
+C. Speed
+D. App crashes
+
+Answer: B
+
+3. Why should backups be encrypted?
+A. Compliance
+B. Protect data at rest
+C. Speed
+D. UI
+
+Answer: B
+
+4. What is a dangerous assumption?
+A. Backups exist
+B. Cloud equals secure
+C. Encryption works
+D. Multiple copies help
+
+Answer: B
+
+5. Best backup practice?
+A. Single cloud copy
+B. Multiple encrypted backups
+C. No backups
+D. SMS backups
+
+Answer: B
+
+6. Why test backups?
+A. Curiosity
+B. Ensure restore works under stress
+C. Performance
+D. Updates
+
+Answer: B
+
+		14. Daily Mobile Security Habits (Actionable Layer)
+
+1. What habit reduces most mobile risk?
+A. New phone
+B. Awareness and permission review
+C. Antivirus apps
+D. Battery optimization
+
+Answer: B
+
+2. Why should permissions be reviewed regularly?
+A. Apps change behavior over time
+B. UI refresh
+C. OS bugs
+D. Battery
+
+Answer: A
+
+3. What daily habit prevents silent compromise?
+A. Ignore alerts
+B. Pay attention to warnings and notifications
+C. Disable updates
+D. Share devices
+
+Answer: B
+
+4. Why should unused apps be removed?
+A. Storage
+B. Reduce attack surface
+C. UI
+D. Speed
+
+Answer: B
+
+5. Best mindset for mobile security?
+A. Paranoia
+B. Assume exposure, minimize impact
+C. Blind trust
+D. Tool dependence
+
+Answer: B
+
+6. Why is consistency more important than tools?
+A. Tools fail
+B. Habits reduce risk continuously
+C. Updates stop
+D. Apps expire
+
+Answer: B
+
+		15. Incident Response: If Something Goes Wrong
+
+1. What is the first response to suspected compromise?
+A. Panic
+B. Disconnect and assess
+C. Delete apps
+D. Ignore
+
+Answer: B
+
+2. Why change passwords quickly?
+A. Convenience
+B. Cut attacker access
+C. UI
+D. Speed
+
+Answer: B
+
+3. When should remote wipe be used?
+A. Low battery
+B. Loss or confirmed compromise
+C. App crash
+D. OS update
+
+Answer: B
+
+4. Why contact service providers?
+A. Courtesy
+B. They can suspend or secure accounts
+C. Speed
+D. UI
+
+Answer: B
+
+5. What mistake worsens incidents?
+A. Acting quickly
+B. Delaying response
+C. Logging activity
+D. Backups
+
+Answer: B
+
+6. Why document the incident?
+A. Memory
+B. Learn and prevent recurrence
+C. Compliance only
+D. UI
+
+Answer: B
+
+		16. Conclusion
+
+1. What is the core lesson of mobile security?
+A. Phones are unsafe
+B. Convenience amplifies risk
+C. Tools solve everything
+D. Malware is rare
+
+Answer: B
+
+2. Why is mobile security a lifestyle issue?
+A. Battery life
+B. Constant interaction and dependence
+C. App design
+D. Screen size
+
+Answer: B
+
+3. What protects users best long-term?
+A. Latest phone
+B. Intentional habits + layered defenses
+C. App stores
+D. Biometrics alone
+
+Answer: B
+
+4. What is the realistic goal of mobile security?
+A. Zero risk
+B. Damage limitation and resilience
+C. Perfect privacy
+D. Tool mastery
+
+Answer: B
+
+5. Why is awareness more powerful than any app?
+A. Apps expire
+B. Awareness adapts to new threats
+C. Awareness encrypts data
+D. Awareness blocks networks
+
+Answer: B
+
+6. Final survival instinct?
+A. Trust devices
+B. Treat your phone like a loaded identity wallet
+C. Disable everything
+D. Replace phone often
+
+Answer: B

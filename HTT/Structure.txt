@@ -1,0 +1,56 @@
+Structure
+
+
+Using Different MODULES.
+    • Different MODULES have set amount of content and questions relating to the topic it is following.
+    • Different types of users will get different of modules assigned to them. 
+    • This is changeable.
+
+Types of User:		//Different roadmaps
+
+    1. Absolute Beginner
+    2. Experienced (somewhat)		//future plans
+			1.   White Hat
+			2.   App Sec
+			3.   Cloud Focused
+			4.   Generalist
+
+
+
+Modules:
+Total = 
+
+	//Absolute Beginner
+1.Digital Survival Instincts
+2.Accounts, Passwords and Authentication (Digital Identity)
+3.Data and Privacy 
+4.Malware and Digital Threats
+5.Safe Daily Digital Habits
+6.Social Media and Online Behavior
+7.Mobile Security
+	
+	//Learner 1
+1.Intro to CyberSecurity Concepts
+2.Hardware and OS Basics/ Computer Fundamentals
+3.How Internet works
+4.Digital Law, Ethics and Scams
+5.Basic troubleshooting and self reliance
+6.Networking Basics
+
+	//Learner 2
+1.How Computer ACTUALLY Work under the hood
+2.Deeper Operating System Skills (Linux Oriented)
+3.Networking Intermediate
+4.Web Foundations
+5.Introduction to Security Thinking
+
+	//Learner 3
+1.Common Vulnerability Classes
+2.Basic Offensive Awareness
+3.Basic Defensive Practice
+4.Real-World Context		//imp
+5.Practical Crypto Literacy
+6.What next?
+	
+	//Specialized Topics
+-future planning-

@@ -1,0 +1,417 @@
+Accounts, Passwords and Authentication (Digital Identity)
+
+
+		 What an “Account” Really Is
+
+1. What does an online account primarily represent?
+A. A device
+B. A person’s digital identity on a service
+C. A software license
+D. A file storage area
+
+Answer: B
+
+2. What best describes an online account?
+A. A username and password pair
+B. A storage space on a server
+C. A contract that represents a digital identity
+D. A user profile for convenience
+
+Answer: C
+
+3. Which of the following is not one of the three hidden layers of an account?
+A. Identity claim
+B. Authentication proof
+C. Authorization
+D. Encryption method
+
+Answer: D
+
+4. Why can a system not distinguish intent between a real user and an attacker?
+A. Systems lack location data
+B. Systems do not store user history
+C. Systems only evaluate evidence, not intent
+D. Systems always trust passwords
+
+Answer: C
+
+5. Why might a login be blocked even when the password is correct?
+A. Server error
+B. Password expiration
+C. Overall confidence level is too low
+D. The account is deleted
+
+Answer: C
+
+6. Authentication systems primarily aim to:
+A. Identify users with certainty
+B. Eliminate all attacks
+C. Manage risk by increasing confidence
+D. Track user behavior
+
+Answer: C
+
+
+
+		Passwords: Ancient, Flawed, Still Everywhere
+
+1. Why do passwords still exist despite being insecure?
+A. They are unbreakable
+B. They are cheap, simple, and human-readable
+C. They are the most secure method
+D. They cannot be replaced
+
+Answer: B
+
+2. Which of the following is not a fundamental weakness of passwords?
+A. Guessable
+B. Reusable
+C. Phishable
+D. Encrypted
+
+Answer: D
+
+3. Why is a password considered “shared knowledge”?
+A. It is stored publicly
+B. It is remembered by the system
+C. Anyone who knows it can authenticate as you
+D. It is reused across sites
+
+Answer: C
+
+4. Which password is stronger and why?
+A. P@ssw0rd! because it has symbols
+B. P@ssw0rd! because it looks complex
+C. correcthorsebatterystaple because it is long
+D. Both are equally strong
+
+Answer: C
+
+5. What mainly determines password strength?
+A. Use of symbols
+B. Visual complexity
+C. Search space size
+D. Capital letters
+
+Answer: C
+
+6. Why is password reuse especially dangerous?
+A. It slows authentication
+B. It allows breaches to chain across accounts
+C. It causes login errors
+D. It weakens encryption
+
+Answer: B
+
+7. How do attackers usually obtain passwords?
+A. Guessing manually
+B. Watching users type
+C. Automated attacks using leaked data and patterns
+D. Breaking encryption directly
+
+Answer: C
+
+
+
+		Password Storage (What Happens After You Type It)
+
+1. Why don’t secure systems store your actual password?
+A. It takes too much space
+B. Passwords are hard to manage
+C. Storing them directly would expose all users if leaked
+D. Passwords change too often
+
+Answer: C
+
+2. What is the purpose of a hash function in password storage?
+A. To encrypt and decrypt passwords
+B. To create a reversible password format
+C. To convert passwords into a one-way representation
+D. To compress passwords
+
+Answer: C
+
+3. Why are good password hash functions intentionally slow?
+A. To reduce server load
+B. To improve user experience
+C. To limit the speed of brute-force cracking attempts
+D. To allow encryption
+
+Answer: C
+
+4. What is the role of a “salt” in password hashing?
+A. To make passwords easier to remember
+B. To hide usernames
+C. To prevent precomputed attacks like rainbow tables
+D. To speed up hashing
+
+Answer: C
+
+5. When news reports say “passwords were leaked,” what usually leaked?
+A. Plaintext passwords
+B. Encrypted messages
+C. Password hashes
+D. Login sessions
+
+Answer: C
+
+6. Why are password managers considered safer despite being a single point of failure?
+A. They remove the need for passwords
+B. They store passwords in plaintext
+C. One strongly protected vault is better than many weak passwords
+D. They are impossible to hack
+
+Answer: C
+
+
+
+		Authentication Factors: The Three Proof Types
+		
+1. Which option is an example of “something you have”?
+A. Password
+B. PIN
+C. Fingerprint
+D. Hardware security key
+
+Answer: D
+
+2. Why does security improve when authentication factors are independent?
+A. Logins become faster
+B. Attackers must compromise different proof types
+C. Passwords become unnecessary
+D. Systems store less data
+
+Answer: B
+
+3. Which combination correctly represents true two-factor authentication (2FA)?
+A. Password + PIN
+B. Password + security question
+C. Password + SMS code
+D. Fingerprint + face scan
+
+Answer: C
+
+4. Why is SMS-based 2FA considered weaker than other methods?
+A. Messages expire too quickly
+B. SMS is not encrypted end-to-end
+C. SIM cards can be hijacked or swapped
+D. Phones cannot receive SMS reliably
+
+Answer: C
+
+5. Which authentication method is generally stronger than SMS but weaker than hardware keys?
+A. Password only
+B. Email verification
+C. Time-based authenticator app
+D. Security questions
+
+Answer: C
+
+6. Why are hardware security keys considered the strongest authentication factor?
+A. They are expensive
+B. They rely on biometrics
+C. They cannot be phished remotely
+D. They store passwords
+
+Answer: C
+
+7. Which statement about 2FA/MFA is most accurate?
+A. Any second step is equally secure
+B. More factors always mean perfect security
+C. The type of factor matters more than the number
+D. Biometrics replace all other factors
+
+Answer: C
+
+
+
+		 Authentication Apps and Time-Based Codes
+		 
+1. What is the main purpose of authentication apps like Google Authenticator or Authy?
+A. To store passwords
+B. To generate temporary login codes
+C. To encrypt user data
+D. To replace usernames
+
+Answer: B
+
+2. How are time-based one-time passwords (TOTP) generated?
+A. From the user’s password
+B. From internet connectivity
+C. From a shared secret and current time
+D. From the device’s phone number
+
+Answer: C
+
+3. Why do TOTP codes expire every 30–60 seconds?
+A. To save battery
+B. To improve randomness
+C. To limit usefulness if intercepted
+D. To reduce server load
+
+Answer: C
+
+4. Why are authentication apps more secure than SMS-based codes?
+A. They require internet access
+B. They are tied to the device, not the SIM
+C. They use longer codes
+D. They cannot be copied
+
+Answer: B
+
+5. What happens if an attacker steals your password but not your authenticator app?
+A. Login always succeeds
+B. Login always fails
+C. Login may be blocked due to missing second factor
+D. Account is deleted
+
+Answer: C
+
+6. Why is backing up or securely transferring authenticator apps important?
+A. Codes are stored online
+B. Loss of the device can lock you out
+C. Apps expire
+D. Time-based codes stop working
+
+Answer: B
+
+
+
+		Sessions, Cookies, and Tokens (The Silent Guardians)
+		
+1. Why doesn’t a website ask for your password on every page you visit?
+A. Browsers remember passwords automatically
+B. The server stores your password temporarily
+C. A session identifier proves you already authenticated
+D. Cookies replace authentication
+
+Answer: C
+
+2. What is the primary purpose of a session token or cookie?
+A. To encrypt communication
+B. To identify an authenticated session
+C. To store user data permanently
+D. To replace passwords
+
+Answer: B
+
+3. Why is stealing a session cookie dangerous?
+A. It reveals the password
+B. It allows impersonation without knowing credentials
+C. It deletes the account
+D. It infects the browser
+
+Answer: B
+
+4. Why do secure systems expire sessions after inactivity?
+A. To save storage
+B. To improve performance
+C. To limit damage if a session token is stolen
+D. To force frequent logins
+
+Answer: C
+
+5. Which situation most likely triggers a session invalidation?
+A. Changing your profile picture
+B. Logging in from a new device or location
+C. Refreshing the page
+D. Opening multiple tabs
+
+Answer: B
+		
+		
+		
+		
+		Account Recovery: The Weakest Link
+		
+1. Why is account recovery often the weakest part of security?
+A. It uses outdated software
+B. It bypasses normal authentication controls
+C. It requires internet access
+D. It is rarely used
+
+Answer: B
+
+2. Which recovery method is generally the most risky?
+A. Recovery email
+B. Hardware security key
+C. Security questions
+D. Backup codes
+
+Answer: C
+
+3. Why are personal security questions dangerous?
+A. They expire
+B. They are stored in plaintext
+C. Answers are often guessable or public
+D. They slow login
+
+Answer: C
+
+4. What is the biggest risk of an outdated recovery email or phone number?
+A. Login delay
+B. Increased spam
+C. Attackers may gain control of recovery paths
+D. Passwords reset automatically
+
+Answer: C
+
+5. Why should backup codes be stored securely and offline?
+A. They are reusable passwords
+B. They never expire
+C. Anyone who has them can bypass MFA
+D. They are encrypted
+
+Answer: C
+
+6. Which mindset best protects account recovery security?
+A. “I’ll fix it later”
+B. “Recovery is less important than login”
+C. “Attackers will try the easiest path”
+D. “Strong passwords are enough”
+
+Answer: C		
+		
+		
+		
+		Zero Trust and the Modern Direction
+		
+1. What is the core idea behind Zero Trust security?
+A. Trust all internal users
+B. Block all external access
+C. Never assume trust; always verify
+D. Remove authentication
+
+Answer: C
+
+2. Why did the traditional “trusted internal network” model fail?
+A. Networks became too slow
+B. Users forgot passwords
+C. Attackers gained internal access through phishing and breaches
+D. Firewalls stopped working
+
+Answer: C
+
+3. In a Zero Trust model, what happens after successful login?
+A. Full access is granted permanently
+B. No further checks occur
+C. Access is continuously evaluated
+D. The user is logged out
+
+Answer: C
+
+4. Which factor might cause trust to decrease in a Zero Trust system?
+A. Strong password
+B. Known device and location
+C. Sudden login from a new environment
+D. Previous successful logins
+
+Answer: C
+
+5. Why is Zero Trust described as “direction” rather than a product?
+A. It is a brand name
+B. It cannot be implemented
+C. It is a security mindset applied across systems
+D. It replaces encryption
+
+Answer: C		

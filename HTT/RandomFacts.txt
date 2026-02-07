@@ -1,0 +1,104 @@
+1.Someone reads a message instantly and waits five minutes to reply so they don’t look desperate. That’s not procrastination, that’s camouflage.
+
+2.You instinctively lower your phone brightness in public, not to save battery, but to avoid strangers reading your life like it’s public-domain literature.
+
+3.CAPTCHAs didn’t prove you’re human. They trained you to work for free by labeling traffic lights for the machine uprising. You comply anyway. Survival beats dignity.
+
+4.Nobody updates software immediately. We wait. Let others die first. Then we patch.
+
+5.The fastest way to spot danger online is vibes. Grammar slightly off, urgency too high, logo slightly blurry. Your brain flags it before logic catches up. Pattern recognition is older than language.
+
+6.Everyone knows they’re being tracked, yet we still feel offended when ads get too accurate. Surveillance is fine. Intimacy is not.
+
+7.Your password habits tell a story of gradual enlightenment: birthdates → pet names → keyboard mashing → password manager → quiet paranoia.
+
+8.The ultimate digital survival move is knowing when to log off. Very few master it. Most just evolve thicker skins and worse sleep schedules.
+
+9.The internet didn’t make humans smarter or dumber. It just forced ancient survival instincts to run at broadband speed, with pop-ups.
+
+
+
+
+
+10.The Target data breach (2013) happened because attackers entered through an HVAC contractor’s credentials. Translation: the predator didn’t attack the mammoth, it attacked the mammoth’s ankle. This is why companies now side-eye every third-party login like it’s radioactive.
+During the Target breach, cybercriminals were able to steal 40 million credit and debit records and 70 million customer records. This occurred during the holiday season in 2013. While it wasn’t the single largest security breach in history, it was one of the largest. And because there had been many other high-profile data breaches just before, customers were particularly wary.
+
+11.The Sony Pictures hack (2014) taught the world that embarrassing emails are more dangerous than stolen money. Executives learned—too late—that private Slack-energy emails do not age well when released as PDFs on the open internet.
+On November 24, 2014, the hacker group "Guardians of Peace" leaked confidential data from the film studio Sony Pictures Entertainment (SPE). The data included employee emails, personal and family information, executive salaries, copies of then-unreleased films, future film plans, screenplays, and other information. The perpetrators then employed a variant of the Shamoon wiper malware to erase Sony's computer infrastructure.
+During the hack, the group demanded that Sony withdraw its then-upcoming film The Interview, a political satire action comedy film produced and directed by Seth Rogen and Evan Goldberg. The film stars Rogen and James Franco as journalists who set up an interview with North Korean leader Kim Jong Un only to then be recruited by the CIA to assassinate him. The hacker group threatened terrorist attacks at cinemas screening the film, resulting in many major U.S. theater chains opting not to screen The Interview. In response to these threats, Sony chose to cancel the film's formal premiere and mainstream release, opting to skip directly to a downloadable digital release followed by a limited theatrical release the next day.
+
+12.The Cambridge Analytica scandal (2018) made everyone realize quizzes like “Which potato are you?” were actually psychological profiling tools. Humanity collectively learned that “free” services cost you… you.
+The 2018 Cambridge Analytica scandal involved the unauthorized harvesting of personal data from up to 87 million Facebook users by a firm linked to political consulting. Data from a personality quiz app was used to profile voters for political campaigns, leading to massive public outcry, regulatory fines, and the closure of the company in May 2018. 
+
+13.WannaCry ransomware (2017) spread so fast it knocked out hospitals, factories, and trains. Overnight, backups stopped being a nerd suggestion and became a survival reflex. Somewhere, an IT admin was finally believed.
+The WannaCry ransomware attack was a worldwide cyberattack in May 2017 by the WannaCry ransomware cryptoworm, which targeted computers running the Microsoft Windows operating system by encrypting data and demanding ransom payments in the form of bitcoin cryptocurrency. It was propagated using EternalBlue, an exploit developed by the United States National Security Agency (NSA) for Microsoft Windows systems. EternalBlue was stolen and leaked by a group called The Shadow Brokers (TSB) a month prior to the attack. While Microsoft had released patches previously to close the exploit, much of WannaCry's spread was from organizations that had not applied these patches, or were using older Windows systems that were past their end of life. These patches were imperative to cyber security, but many organizations did not apply them, citing a need for 24/7 operation, the risk of formerly working applications breaking because of the changes, lack of personnel or time to install them, or other reasons.
+
+14.The Ashley Madison leak (2015) reminded the planet that anonymity on the internet is more of a suggestion than a feature. “Discrete and confidential” became two of the most cursed words in tech marketing.
+In July 2015, an unknown person or group calling itself "The Impact Team" announced that they had stolen user data of Ashley Madison, a commercial website billed as enabling extramarital affairs. The hackers copied personal information about the site's user base and threatened to release names and personal identifying information if Ashley Madison would not immediately shut down. To underscore the validity of the threat, personal information of more than 2,500 users was released. Ashley Madison denied that its records were insecure and continued to operate.Because of the site's lack of adequate security and practice of not deleting personal information from its database – including real names, home addresses, search history and credit card transaction records – many users feared being publicly shamed.On 18 and 20 August, more than 60 gigabytes of additional data was publicly released, including user details. This included personal information about users who had paid the site to delete their personal information showing that the data was not deleted.
+
+15.Zoom bombing during COVID (2020) trained millions of normal humans in digital threat modeling. Passwords, waiting rooms, and “mute all” became basic survival tools, like locking your door at night.
+
+16.The Yahoo breaches (2013–2014)—three billion accounts—proved that size does not equal safety. People learned to reuse passwords less… or at least feel guilty about it.
+In 2013 and 2014, Yahoo, an American web services company, experienced two of the largest data breaches in history—yet despite being aware, the company did not disclose them publicly until September 2016.The 2013 data breach occurred on Yahoo servers in August 2013 and affected all three billion user accounts. The 2014 breach affected over 500 million user accounts. Both breaches are considered the largest ever discovered and included names, email addresses, phone numbers, birth dates, and security questions—both encrypted and unencrypted. When Yahoo made the breaches public in 2016, they acknowledged being aware of the second intrusion since 2014.
+
+17.The iCloud celebrity photo leaks (2014) permanently changed how people think about cloud storage. “It’s private” was replaced with “it’s private until it isn’t.”
+From August 31, 2014 to October 27, 2014, a collection of nearly five hundred sexually explicit private photos and videos were posted online by an anonymous group that called themselves "collectors". The majority of these photos and videos were illegally obtained sexts from over a hundred female celebrities that showed the women topless, naked, and/or performing sexual acts. They were first posted on the imageboard 4chan, and then swiftly disseminated by other users on websites and social networks such as Imgur and Reddit. Internet users and media respondents termed the phenomenon "Celebgate" or, more popularly, "The Fappening". The images were initially believed to have been obtained via a breach of Apple's cloud services suite iCloud, or a security issue in the iCloud API which allowed them to make unlimited attempts at guessing victims' passwords. Apple claimed in a press release that access was gained via spear phishing attacks.
+
+18.Equifax (2017) leaked social security numbers so badly that credit freezes became a life skill. A whole generation learned that your identity can be stolen without you doing anything stupid at all. Between May and July 2017, American credit bureau Equifax was breached. Private records of 147.9 million Americans along with 15.2 million British citizens and about 19,000 Canadian citizens were compromised in the breach, making it one of the largest cybercrimes related to identity theft. Equifax discovered the breach at the end of July, but did not disclose it to the public until September 2017. In a settlement with the United States Federal Trade Commission, Equifax offered affected users settlement funds and free credit monitoring.
+
+19.Stuxnet (discovered 2010) quietly taught governments that malware could cause physical destruction. The instinct shifted from “cyber = virtual” to “cyber = things explode now.”
+Stuxnet specifically targets programmable logic controllers (PLCs), which allow the automation of electromechanical processes such as those used to control machinery and industrial processes including gas centrifuges for separating nuclear material. Exploiting four zero-day flaws in the systems, Stuxnet functions by targeting machines using the Microsoft Windows operating system and networks, then seeking out Siemens Step7 software. Stuxnet reportedly compromised Iranian PLCs, collecting information on industrial systems and causing the fast-spinning centrifuges to tear themselves apart.
+
+20.The NotPetya attack (2017) looked like ransomware but was actually a digital scorched-earth weapon. Companies learned that sometimes the attacker doesn’t want your money—they want your lights off.
+Security experts determined that the variant of Petya used in the 2017 Ukraine cyberattacks had been modified and was subsequently named NotPetya or Nyetna to distinguish it from the original ransomware. NotPetya encrypted entire files, not just the Master File Table (MFT), and in some cases, functioned as a wiper, permanently destroying or irreversibly altering data, with no known method of recovery. Some security experts saw that the software could intercept passwords and perform administrator-level actions that could further ruin computer files. They also noted that the software could identify specific computer systems and bypass infection of those systems, suggesting the attack was more surgical in its goal. Unlike the WannaCry software, a "kill switch" was never found in NotPetya, which could have been used to immediately stop its spread.
+
+21.The rise of deepfakes (late 2010s onward) rewired trust itself. Video evidence went from “proof” to “maybe?” faster than philosophers could blink.
+Due to the capability of deepfakes to fool viewers and believably mimic a person, research has indicated that the concept of truth through observation cannot be fully relied on. Additionally, literacy of the technology among populations could be called into question due to the relatively new success of convincing deepfakes. When combined with increasing ease of access to the technology, this has led to the concern amongst some experts that some societies are not prepared to interact with deepfakes organically without potential consequences from sharing misinformation and disinformation.
+
+22.Trust nothing, verify vibes, and assume screenshots live forever.
+
+23.Pegasus spyware revelations (2021) showed governments hacking journalists and activists through missed calls. You didn’t even have to answer. Humanity learned that silence is no longer safety.
+The 2021 Pegasus Project revelations exposed the widespread, illicit use of military-grade spyware developed by Israel’s NSO Group to target phones belonging to journalists, activists, and politicians worldwide. A leaked list of 50,000 potential targets led to investigations in countries like India, Hungary, and others. As of September 2023, Pegasus operators were able to remotely install the spyware on iOS versions through 16.6 using a zero-click exploit. While the capabilities of Pegasus may vary over time due to software updates, Pegasus is generally capable of reading text messages, call snooping, collecting passwords, location tracking, accessing the target device's microphone and camera, and harvesting information from apps. The spyware is named after Pegasus, the winged horse of Greek mythology.
+
+24.Privacy isn’t about having something to hide. It’s about having something to protect.
+
+25.The Log4Shell vulnerability (2021) broke the illusion that obscure backend code doesn’t matter. A tiny logging library nearly set the internet on fire. Survival instinct upgraded: the boring stuff is the dangerous stuff.
+
+26.“There are only two types of companies: those that have been hacked and those that don’t know it yet.”
+
+27.Facebook outage (2021) took down Instagram and WhatsApp for hours. On October 4, 2021, at 15:39 UTC, the social network Facebook and its subsidiaries, Messenger, Instagram, WhatsApp, Mapillary, and Oculus, became globally unavailable for a period of six to seven hours. The outage was caused by the loss of IP routes to the Facebook Domain Name System (DNS) servers, which were all self-hosted at the time. 
+
+28.The SolarWinds supply-chain attack (2020) taught the world that trusting updates blindly is adorable and dangerous. Hackers didn’t break in; they were invited. On December 13, 2020, The Washington Post reported that multiple government agencies were breached through SolarWinds's Orion software. The next day, the company stated in an SEC filing that fewer than 18,000 of its 33,000 Orion customers were affected, involving certain hotfixes of versions 2019.4 through 2020.2.1, released between March 2020 and June 2020. According to Microsoft, hackers acquired superuser access to SAML token-signing certificates. This SAML certificate was then used to forge new tokens to allow hackers trusted and highly privileged access to networks. The Cybersecurity and Infrastructure Security Agency issued Emergency Directive 21–01 in response to the incident, advising all federal civilian agencies to disable Orion.
+
+29.“Trust is not a security model.”
+
+30.Twitter (X) verification chaos (2022) turned blue checkmarks into weapons of misinformation overnight. Fake pharmaceutical announcements wiped billions off market caps in minutes. Elon Musk’s Twitter acquisition led to immediate, chaotic changes to the platform's verification system, launching a $7.99/month subscription (Twitter Blue) that allowed anyone to purchase a blue checkmark. This replaced the previous, identity-verified system, causing a surge in impersonation, fake, and malicious accounts—including, for example, a fake Eli Lilly account tweeting that "insulin is free". 
+
+31.FTX collapse (2022) vaporized billions and taught people that “crypto genius” plus “trust me bro” is not a business plan. 
+The bankruptcy of FTX, a Bahamas-based cryptocurrency exchange, began in November 2022. The collapse of FTX, caused by a spike in customer withdrawals that exposed an $8 billion hole in FTX's accounts, served as the impetus for its bankruptcy. Prior to its collapse, FTX was the third-largest cryptocurrency exchange by volume and had over one million users. 
+
+32.“Sounds right” is not the same as “is right.”
+
+33.ChatGPT data hallucination lawsuits (2023 onwards) rewired how people trust AI outputs. Between 2023 and early 2026, OpenAI has faced multiple lawsuits and legal actions stemming from ChatGPT's "hallucinations"—the generation of false, defamatory, or misleading information presented as fact. These cases range from defamation claims and privacy complaints to lawsuits alleging that hallucinations have caused severe psychological harm. 
+
+34.23andMe data breach (2023) made people realize genetic data theft isn’t like losing a password. You can’t rotate your DNA.
+The 23andMe data leak was a data breach at personal genomics company 23andMe reported in October 2023. The cyberattack gathered profile and ethnicity information from millions of users. The affected customers were reported to be not only primarily Ashkenazi Jews but also including hundreds of thousands of ethnically Chinese users. The hacker(s) stole information customers had chosen to share with their DNA matches, which could include their name, profile photo, birth year, location, family surnames, grandparents' birthplaces, ethnicity estimates, mitochondrial DNA haplogroup, Y-chromosome DNA haplogroup, link to external family tree, and any text content a customer had optionally included in their "About" section. On October 6, 2023, the company confirmed that the hacker(s) had illicitly accessed data on approximately 6.9 million users.
+
+35.“Some data can never be reset.”
+
+36.LastPass breaches (2022–2023) shattered blind faith in password managers while paradoxically making people realize they still need them. Digital adulthood is choosing the least bad option.
+The LastPass 2022 data breach refers to two related security incidents disclosed by the password manager LastPass in 2022. In the first incident, an attacker accessed parts of LastPass’s development environment and exfiltrated source code repositories and technical documentation, including an encrypted copy of the key used to protect backups of customer data stored in Amazon S3. In a second incident, a senior DevOps engineer’s personal computer was compromised, and the attacker used a keystroke logger to obtain the employee’s credentials and access an internal vault holding further keys.
+
+37.“Perfect security doesn’t exist. Only trade-offs.”
+
+38.AI-generated scams using cloned voices of family members (2023-ongoing). AI-generated voice cloning scams, a sophisticated form of "vishing" (voice phishing), became a prominent and rapidly growing threat between 2023 and 2025. Criminals use AI to create hyper-realistic, emotional replicas of family members' voices—often using only a few seconds of audio taken from social media—to manipulate victims into sending money under emergency pretenses. 
+
+39.A cloud file deleted is still a copy.
+
+40.“The internet never forgets. It just waits.”
+
+41.Passwords protect access, but humans choose convenience over security.
+
+42.Digital platforms compete for attention, not well-being.
+
+43.Treat your actions online as long-term investments, not just temporary expressions.

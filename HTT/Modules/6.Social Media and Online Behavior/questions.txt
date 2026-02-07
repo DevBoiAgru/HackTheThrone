@@ -1,0 +1,358 @@
+Social Media and Online Behavior
+
+
+
+		1. Social Media Is an Environment, Not a Tool
+
+1. Why is social media better described as an “environment” rather than a tool?
+A. It performs only one function
+B. It continuously shapes behavior, norms, and attention
+C. It is optional software
+D. It stores files
+
+Answer: B
+
+2. What distinguishes an environment from a tool in digital spaces?
+A. Tools update automatically
+B. Environments influence users even when they’re passive
+C. Tools collect data
+D. Environments require accounts
+
+Answer: B
+
+3. Why is passive scrolling still influential?
+A. Content is random
+B. Exposure affects perception and mood without direct interaction
+C. It improves memory
+D. It increases security
+
+Answer: B
+
+4. Which behavior shows misunderstanding social media as just a tool?
+A. Setting time limits
+B. Assuming exposure doesn’t affect beliefs
+C. Reviewing privacy settings
+D. Curating follows
+
+Answer: B
+
+5. What risk arises from treating social media as neutral infrastructure?
+A. Slower devices
+B. Unnoticed behavioral and belief shifts
+C. Reduced storage
+D. Account deletion
+
+Answer: B
+
+
+
+		2. Algorithmic Mediation of Reality
+
+1. What does algorithmic mediation mean?
+A. Humans select all content manually
+B. Algorithms filter and prioritize what users see
+C. Content is chronological
+D. Platforms hide ads
+
+Answer: B
+
+2. Why do algorithms optimize engagement?
+A. To improve truth
+B. To maximize time, clicks, and ad revenue
+C. To reduce data
+D. To promote accuracy
+
+Answer: B
+
+3. What unintended effect can algorithmic feeds create?
+A. Faster internet
+B. Echo chambers and polarization
+C. Better education
+D. Equal visibility
+
+Answer: B
+
+4. Why can two users see completely different “realities”?
+A. Random errors
+B. Algorithms personalize content based on behavior
+C. Device differences
+D. Time zones
+
+Answer: B
+
+5. What is a key survival instinct when dealing with algorithms?
+A. Trust the feed
+B. Actively diversify information sources
+C. Scroll longer
+D. Disable updates
+
+Answer: B
+
+
+
+		3. Quantified Social Status and Comparison
+
+1. What is “quantified social status”?
+A. Income tracking
+B. Metrics like likes, shares, followers as social value signals
+C. Encrypted messaging
+D. Account verification
+
+Answer: B
+
+2. Why are social metrics psychologically powerful?
+A. They are accurate measures of worth
+B. They trigger reward and comparison systems in the brain
+C. They improve memory
+D. They reduce anxiety
+
+Answer: B
+
+3. What distortion do metrics introduce?
+A. Slower feeds
+B. Visibility ≠ value, but feels like it is
+C. Better friendships
+D. Improved communication
+
+Answer: B
+
+4. Which behavior reinforces unhealthy comparison?
+A. Turning off like counts
+B. Constantly monitoring engagement numbers
+C. Posting intentionally
+D. Limiting followers
+
+Answer: B
+
+5. What is a healthier interpretation of social metrics?
+A. Objective truth
+B. Signals of platform engagement, not personal worth
+C. Long-term value
+D. Security indicators
+
+Answer: B
+
+
+
+		4. Online Disinhibition Effect
+
+1. What is the online disinhibition effect?
+A. Faster typing
+B. Reduced restraint in online behavior
+C. Better communication
+D. Increased privacy
+
+Answer: B
+
+2. Which factor contributes most to disinhibition online?
+A. Screen resolution
+B. Anonymity and physical distance
+C. Encryption
+D. Bandwidth
+
+Answer: B
+
+3. How can disinhibition increase risk?
+A. Users post less
+B. Oversharing and impulsive interactions
+C. Improved security
+D. Stronger passwords
+
+Answer: B
+
+4. Why do people say things online they wouldn’t say offline?
+A. Platforms encourage honesty
+B. Reduced immediate social consequences
+C. Better moderation
+D. Time delays
+
+Answer: B
+
+5. What habit counteracts online disinhibition?
+A. Posting faster
+B. Pausing before posting or responding
+C. Disabling notifications
+D. Using more emojis
+
+Answer: B
+
+
+
+
+		5. Social Engineering via Platforms
+
+1. Why are social platforms ideal for social engineering?
+A. They block malware
+B. They expose social graphs, interests, and trust cues
+C. They encrypt messages
+D. They limit visibility
+
+Answer: B
+
+2. Which signal do attackers exploit most?
+A. CPU usage
+B. Familiar names, mutual contacts, and urgency
+C. Strong passwords
+D. App updates
+
+Answer: B
+
+3. What makes impersonation attacks effective on social media?
+A. Poor internet
+B. Visual similarity and assumed trust
+C. Encryption
+D. Platform speed
+
+Answer: B
+
+4. Why are “harmless” quizzes and games risky?
+A. They are boring
+B. They collect profile and behavioral data
+C. They slow phones
+D. They block feeds
+
+Answer: B
+
+5. What is the best defense against social engineering on platforms?
+A. Ignoring everyone
+B. Verifying identities and requests independently
+C. Using emojis
+D. Posting more
+
+Answer: B
+
+
+	
+		6. Applicable Steps: Conscious Consumption
+
+1. What does conscious consumption mean in social media use?
+A. Avoiding all platforms
+B. Actively choosing what and how you consume content
+C. Consuming more content
+D. Trusting algorithms
+
+Answer: B
+
+2. Why is endless scrolling problematic?
+A. It drains battery
+B. It reduces intentionality and awareness
+C. It improves learning
+D. It increases productivity
+
+Answer: B
+
+3. Which step supports conscious consumption?
+A. Turning off autoplay
+B. Increasing notifications
+C. Following trends blindly
+D. Ignoring sources
+
+Answer: A
+
+4. Why should emotionally charged content be treated cautiously?
+A. It is boring
+B. It is optimized for engagement, not accuracy
+C. It is encrypted
+D. It is rare
+
+Answer: B
+
+5. What is a healthy consumption habit?
+A. Doomscrolling
+B. Setting time boundaries
+C. Chasing virality
+D. Passive exposure
+
+Answer: B
+
+
+
+
+		7. Applicable Steps: Identity Protection
+
+1. What is digital identity on social media?
+A. Profile picture only
+B. The sum of visible, inferred, and behavioral data
+C. Username alone
+D. Email address
+
+Answer: B
+
+2. Why is oversharing a long-term risk?
+A. It uses storage
+B. Data persists and can be recontextualized later
+C. It slows feeds
+D. It increases engagement
+
+Answer: B
+
+3. Which habit protects identity best?
+A. Posting in real time
+B. Delaying or generalizing location sharing
+C. Public profiles
+D. Linking all accounts
+
+Answer: B
+
+4. Why should old posts be reviewed periodically?
+A. For nostalgia
+B. Context changes, but content persists
+C. They disappear automatically
+D. They improve algorithms
+
+Answer: B
+
+5. What is a strong identity protection practice?
+A. One public persona everywhere
+B. Separating personal, professional, and anonymous spaces
+C. Using the same username
+D. Posting daily
+
+Answer: B
+
+
+
+
+		8. Long-Term Strategy: Intentional Use
+
+1. What does intentional use of social media mean?
+A. Maximizing reach
+B. Aligning platform use with personal goals and values
+C. Avoiding privacy settings
+D. Following algorithms
+
+Answer: B
+
+2. Why is intentional use a long-term strategy?
+A. Platforms change constantly
+B. Habits outlast features and policies
+C. Tools never fail
+D. Algorithms are stable
+
+Answer: B
+
+3. Which question supports intentional use?
+A. “Will this go viral?”
+B. “Why am I using this platform?”
+C. “Who liked my post?”
+D. “What’s trending?”
+
+Answer: B
+
+4. What risk does unintentional use create over time?
+A. Faster learning
+B. Gradual erosion of attention, privacy, and autonomy
+C. Stronger identity
+D. Better security
+
+Answer: B
+
+5. What is the ultimate goal of intentional social media use?
+A. Maximum visibility
+B. Retaining agency over attention, identity, and behavior
+C. More followers
+D. Algorithmic approval
+
+Answer: B
+
+

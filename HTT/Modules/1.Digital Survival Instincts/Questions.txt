@@ -1,0 +1,447 @@
+Digial Survival Instincts
+
+
+		Section 1: Digital Survival Instincts – Basics
+
+1. What does “digital survival instincts” primarily refer to?
+A. Advanced hacking techniques
+B. Natural awareness to stay safe online
+C. Programming skills
+D. Social media popularity
+
+Answer: B
+
+2. Digital survival instincts mainly help a user to:
+A. Avoid using the internet
+B. Increase internet speed
+C. Stay safe and in control online
+D. Learn programming
+
+Answer: C
+
+3. Why are digital survival instincts important today?
+A. Because everyone uses the internet professionally
+B. Because threats only affect large companies
+C. Because daily digital actions carry real risks
+D. Because devices are becoming cheaper
+
+Answer: C
+
+4. Which mindset best supports digital survival?
+A. “Technology will protect me”
+B. “I’ll worry after something happens”
+C. “Assume risk and act carefully”
+D. “I don’t use important apps anyway”
+
+Answer: C
+
+5. Which of the following best describes the internet?
+A. A safe space by default
+B. A private environment
+C. A neutral tool that depends on user behavior
+D. A place monitored only by governments
+
+Answer: C
+
+6. Why are attackers often successful against ordinary users?
+A. Users lack intelligence
+B. Attackers always use advanced tools
+C. Users rely on convenience over caution
+D. Devices are poorly built
+
+Answer: C
+
+
+		Section 2: Digital Identity & Online Presence
+
+1. A digital identity is best described as:
+A. A single username
+B. Only social media profiles
+C. A collection of data linked to a person
+D. A government ID
+
+Answer: C
+
+
+2. Why is personal data valuable to companies?
+A. It increases internet bandwidth
+B. It helps predict user behavior
+C. It reduces software cost
+D. It improves device hardware
+
+Answer: B
+
+3. Your digital identity includes:
+A. Only your social media accounts
+B. Only your email address
+C. All accounts, data, and behaviors linked to you
+D. Only official documents
+
+Answer: C
+
+4. Which action most directly creates a digital footprint?
+A. Turning off your phone
+B. Browsing in airplane mode
+C. Posting a comment online
+D. Charging your device
+
+Answer: C
+
+5. Why should digital identity be protected carefully?
+A. It cannot be changed once created
+B. It is linked to personal, financial, and social access
+C. It affects phone battery life
+D. It only matters to celebrities
+
+Answer: B
+
+
+		Section 3: Accounts, Passwords & Authentication
+
+1. What is the main purpose of a password?
+A. To make login slower
+B. To identify a device
+C. To prove you are the legitimate user
+D. To store personal data
+
+Answer: C
+
+2. Which password is the strongest?
+A. password123
+B. John@2002
+C. qwerty
+D. A long, unique random phrase
+
+Answer: D
+
+3. Which practice most reduces account takeover risk?
+A. Using complex usernames
+B. Password reuse with variations
+C. Unique passwords per account
+D. Logging in daily
+
+Answer: C
+
+4. Why is reusing passwords dangerous?
+A. It confuses browsers
+B. It slows down login
+C. One breach can expose multiple accounts
+D. It uses more storage
+
+Answer: C
+
+5. Two-factor authentication (2FA) improves security because:
+A. It replaces passwords
+B. It adds an extra verification step
+C. It encrypts the device
+D. It blocks all hackers
+
+Answer: B
+
+6. Why is SMS-based authentication considered weak?
+A. It is slow
+B. Messages can be intercepted or redirected
+C. It consumes storage
+D. It requires a SIM card
+
+Answer: B
+
+7. Why is SMS-based authentication considered weak?
+A. It is slow
+B. Messages can be intercepted or redirected
+C. It consumes storage
+D. It requires a SIM card
+
+Answer: B
+
+
+
+		Section 4: Data & Privacy Awareness
+
+1. Personal data includes:
+A. Only bank details
+B. Only passwords
+C. Any information that can identify you
+D. Only government records
+
+Answer: C
+
+2. Which data type is often underestimated but highly revealing?
+A. Passwords
+B. Metadata
+C. Bank statements
+D. Photos
+
+Answer: B
+
+3. Why is “free” online service rarely free?
+A. Ads pay everything
+B. Maintenance costs are zero
+C. User data funds the service
+D. Governments sponsor them
+
+Answer: C
+
+4. Which of the following is an example of metadata?
+A. Message content
+B. Photo quality
+C. Time and location of a message
+D. App design
+
+Answer: C
+
+5. “Free” online services usually earn money by:
+A. Donations
+B. Government funding
+C. Selling or using user data
+D. Charging later
+
+Answer: C
+
+6. Why should you care about app permissions?
+A. They affect phone color themes
+B. They determine what data apps can access
+C. They control internet speed
+D. They update apps automatically
+
+Answer: B
+
+
+		Section 5: Malware & Digital Threats
+
+1. Malware is best described as:
+A. Software that improves performance
+B. Any unwanted or harmful software
+C. Antivirus software
+D. System updates
+
+Answer: B
+
+2. Which of the following is a common goal of malware?
+A. Increase battery life
+B. Steal data or control devices
+C. Improve network speed
+D. Fix system bugs
+
+Answer: B
+
+3. Malware on modern devices usually aims to:
+A. Destroy hardware
+B. Steal data silently
+C. Announce itself loudly
+D. Improve performance
+
+Answer: B
+
+4. Phishing attacks are mainly designed to:
+A. Damage hardware
+B. Steal personal information
+C. Improve website ranking
+D. Test network speed
+
+Answer: B
+
+5. Malware is best defined as:
+A. Legal software
+B. Hardware failure
+C. Software intended to harm or spy
+D. Internet congestion
+
+Answer: C
+
+6. Phishing attacks usually try to:
+A. Improve website design
+B. Trick users into giving sensitive information
+C. Encrypt user data safely
+D. Test email servers
+
+Answer: B
+
+
+		Section 6: Safe Daily Digital Habits
+
+1. Which habit improves daily digital safety the most?
+A. Ignoring updates
+B. Clicking links quickly
+C. Keeping software updated
+D. Using public Wi-Fi frequently
+
+Answer: C
+
+2. Why is “free” online service rarely free?
+A. Ads pay everything
+B. Maintenance costs are zero
+C. User data funds the service
+D. Governments sponsor them
+
+Answer: C
+
+3. Why should links in emails be treated cautiously?
+A. They consume data
+B. They may lead to fake or malicious sites
+C. They slow down browsers
+D. They reduce email storage
+
+Answer: B
+
+4. What is the safest action when something online feels suspicious?
+A. Click and check
+B. Ignore instinct
+C. Pause and verify
+D. Share it with friends
+
+Answer: C
+
+5. Which action increases risk the most?
+A. Using screen lock
+B. Clicking unknown links
+C. Updating apps
+D. Logging out
+
+Answer: B
+
+
+		Section 7: Social Media & Online Behavior
+
+1. What makes oversharing dangerous?
+A. It attracts spam
+B. It creates patterns attackers can exploit
+C. It lowers engagement
+D. It slows the app
+
+Answer: B
+
+2. Which post is riskiest?
+A. Sharing a meme
+B. Posting a hobby
+C. Posting live travel location
+D. Sharing an opinion
+
+Answer: C
+
+3. Why are privacy settings important on social media?
+A. They change app colors
+B. They control who can see your content
+C. They block ads completely
+D. They speed up loading
+
+Answer: B
+
+
+		Section 8: Mobile & Device Awareness
+
+1. Why is a phone considered a high-value target?
+A. It has games
+B. It stores identity, data, and access
+C. It is expensive
+D. It connects to Wi-Fi
+
+Answer: B
+
+2. Which action improves mobile security?
+A. Leaving Bluetooth always on
+B. Using a screen lock
+C. Installing random apps
+D. Ignoring permissions
+
+Answer: B
+
+3. What should you do if your phone is lost?
+A. Wait and hope
+B. Buy a new SIM immediately
+C. Lock or wipe it remotely
+D. Ignore it
+
+Answer: C
+
+
+		Section 9: Core Mindset
+
+1. Digital safety is mostly about:
+A. Expensive software
+B. Fear of technology
+C. Awareness and habits
+D. Advanced coding
+
+Answer: C
+
+2. Which statement best represents digital survival thinking?
+A. “Nothing bad will happen to me”
+B. “Only experts get hacked”
+C. “I should act assuming risks exist”
+D. “Security is someone else’s job”
+
+Answer: C
+
+3. The most common cause of digital compromise is:
+A. Advanced hackers
+B. Weak daily habits
+C. Device manufacturing flaws
+D. Internet speed
+
+Answer: B
+
+4. Social engineering attacks primarily target:
+A. Servers
+B. Databases
+C. Human psychology
+D. Firewalls
+
+Answer: C
+
+
+5. Which human trait is most commonly exploited in online scams?
+A. Intelligence
+B. Curiosity and fear
+C. Physical strength
+D. Memory
+
+Answer: B
+
+
+6. Reusing the same password across multiple sites is dangerous because:
+A. It slows login time
+B. Passwords expire faster
+C. One breach can compromise all accounts
+D. It uses more storage
+
+Answer: C
+
+
+7. Two-factor authentication (2FA) improves security by:
+A. Making passwords longer
+B. Adding a second verification step
+C. Storing passwords online
+D. Removing the need for passwords
+
+Answer: B
+
+Case Study 1: Phishing Email
+You receive an email claiming your account will be locked in 30 minutes unless you log in.
+Best action:
+A. Click immediately
+B. Reply asking for confirmation
+C. Visit the site via your own bookmark
+D. Forward it to friends
+
+Correct: C
+
+Case Study 3: App Permissions
+A calculator app asks for contacts and microphone access.
+Best response:
+A. Allow for functionality
+B. Allow temporarily
+C. Deny or uninstall
+D. Ignore
+
+Correct: C
+
+Case Study 4: Public Wi-Fi
+You connect to free Wi-Fi at an airport to check your bank account.
+Risk involved:
+A. Battery drain
+B. Data interception
+C. App crash
+D. SIM damage
+
+Correct: B

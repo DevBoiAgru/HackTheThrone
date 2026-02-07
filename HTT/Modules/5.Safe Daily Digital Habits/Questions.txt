@@ -1,0 +1,452 @@
+Safe Daily Digital Habits
+
+
+
+
+		1. Why “Daily Habits” Matter More Than Tools
+
+1. Why are daily digital habits often more effective than security tools alone?
+A. Tools remove the need for user judgment
+B. Habits reduce exposure before tools need to act
+C. Tools never fail
+D. Habits replace encryption
+
+Answer: B
+
+2. What is the biggest limitation of security tools?
+A. They consume storage
+B. They only react after risky behavior occurs
+C. They slow systems
+D. They require passwords
+
+Answer: B
+
+3. Which behavior best demonstrates good digital habits?
+A. Installing many security apps
+B. Pausing before clicking unexpected links
+C. Ignoring updates
+D. Reusing passwords
+
+Answer: B
+
+4. Why do attackers prefer habit-based weaknesses?
+A. They are harder to exploit
+B. Humans are predictable under pressure
+C. Tools block all attacks
+D. Habits are encrypted
+
+Answer: B
+
+5. What is the core idea of digital survival instincts?
+A. Perfect security exists
+B. Reduce risk continuously through behavior
+C. Tools eliminate human error
+D. Only experts get attacked
+
+Answer: B
+
+
+
+		2. Email and Messaging Discipline
+
+1. Why is email still a primary attack vector?
+A. It is encrypted
+B. It blends urgency, trust, and familiarity
+C. It is slow
+D. It blocks malware
+
+Answer: B
+
+2. Which is a red flag in emails or messages?
+A. Neutral language
+B. Urgent calls to act immediately
+C. Verified sender domains
+D. Plain text messages
+
+Answer: B
+
+3. Why are attachments dangerous even from known contacts?
+A. Attachments are always malicious
+B. Accounts can be compromised and used to spread malware
+C. Attachments are unencrypted
+D. They slow devices
+
+Answer: B
+
+4. What habit reduces phishing success the most?
+A. Clicking links quickly
+B. Verifying requests through a second channel
+C. Disabling spam filters
+D. Saving passwords in emails
+
+Answer: B
+
+5. Why do messaging apps increase risk?
+A. They are insecure by design
+B. Informal tone lowers user caution
+C. They block malware
+D. They don’t use encryption
+
+Answer: B
+
+
+
+		3. Password and Login Behavior
+
+1. Which habit most reduces account compromise risk?
+A. Reusing a strong password
+B. Unique passwords for each account
+C. Changing passwords daily
+D. Writing passwords down
+
+Answer: B
+
+2. Why is logging out on shared devices important?
+A. It improves battery life
+B. Sessions can remain active and be abused
+C. It deletes cookies
+D. It updates software
+
+Answer: B
+
+3. Which behavior weakens login security the most?
+A. Using a password manager
+B. Saving passwords in browsers without a lock
+C. Enabling 2FA
+D. Monitoring login alerts
+
+Answer: B
+
+4. Why should login alerts never be ignored?
+A. They are always false
+B. They often signal early-stage compromise
+C. They slow systems
+D. They increase spam
+
+Answer: B
+
+5. What is a strong login habit?
+A. Convenience-first decisions
+B. Treating login prompts as security checkpoints
+C. Clicking “trust this device” everywhere
+D. Disabling verification
+
+Answer: B
+
+
+
+
+		4. Device Hygiene: Treat Devices Like Homes
+
+1. Why is device hygiene compared to maintaining a home?
+A. Devices need decoration
+B. Small neglects accumulate into major risks
+C. Homes require passwords
+D. Devices don’t need maintenance
+
+Answer: B
+
+2. Which habit improves device hygiene?
+A. Ignoring software updates
+B. Installing apps only from trusted sources
+C. Granting all permissions
+D. Disabling firewalls
+
+Answer: B
+
+3. Why are unused apps a risk?
+A. They take storage
+B. They may have unpatched vulnerabilities
+C. They slow typing speed
+D. They encrypt files
+
+Answer: B
+
+4. What is the danger of delaying updates?
+A. Loss of features
+B. Exposure to known, actively exploited vulnerabilities
+C. Battery drain
+D. UI changes
+
+Answer: B
+
+5. Why should admin privileges be limited?
+A. It makes systems slower
+B. Malware gains full control when run as admin
+C. It breaks applications
+D. It disables internet
+
+Answer: B
+
+
+
+
+		5. Network Awareness (Especially Public Wi-Fi)
+
+1. Why is public Wi-Fi risky?
+A. It is slow
+B. Traffic can be intercepted or manipulated
+C. It blocks encryption
+D. It deletes cookies
+
+Answer: B
+
+2. Which activity should be avoided on public Wi-Fi?
+A. Reading news
+B. Logging into sensitive accounts
+C. Watching videos
+D. Checking weather
+
+Answer: B
+
+3. What does a VPN primarily protect on public networks?
+A. Device speed
+B. Data in transit from eavesdropping
+C. Password strength
+D. Malware removal
+
+Answer: B
+
+4. Why are fake Wi-Fi hotspots dangerous?
+A. They are illegal
+B. They mimic legitimate networks to intercept data
+C. They reduce signal strength
+D. They block apps
+
+Answer: B
+
+5. What habit improves network safety?
+A. Auto-connecting to open networks
+B. Disabling Wi-Fi when not needed
+C. Sharing hotspots openly
+D. Ignoring certificate warnings
+
+Answer: B
+
+
+
+
+		6. Backup as a Habit, Not a Reaction
+
+1. Why should backups be habitual?
+A. Storage is cheap
+B. Data loss often happens unexpectedly
+C. Backups remove malware
+D. Backups increase speed
+
+Answer: B
+
+2. What is a common mistake with backups?
+A. Automating them
+B. Keeping only one copy
+C. Testing restoration
+D. Encrypting backups
+
+Answer: B
+
+3. Which backup strategy is safest?
+A. Single cloud backup
+B. Multiple backups in different locations
+C. USB only
+D. Emailing files
+
+Answer: B
+
+4. Why are ransomware attacks tied closely to backups?
+A. Backups attract attackers
+B. Good backups eliminate ransom leverage
+C. Backups spread malware
+D. Backups slow systems
+
+Answer: B
+
+5. What mindset should backups follow?
+A. “I’ll do it after something goes wrong”
+B. “Assume failure and prepare in advance”
+C. “Cloud never fails”
+D. “Only businesses need backups”
+
+Answer: B
+
+
+
+
+		7. Browsing and Content Consumption Habits
+
+1. Why is casual browsing a risk vector?
+A. Browsers are insecure
+B. Malicious ads and scripts can execute automatically
+C. Users type too fast
+D. Websites block security
+
+Answer: B
+
+2. Which habit reduces browser-based attacks?
+A. Clicking pop-ups quickly
+B. Keeping browsers and extensions updated
+C. Installing many extensions
+D. Disabling warnings
+
+Answer: B
+
+3. Why are free content and pirated sites risky?
+A. They are illegal only
+B. They often bundle malware or malicious ads
+C. They load slowly
+D. They lack encryption
+
+Answer: B
+
+4. What is a good content consumption habit?
+A. Trusting search results blindly
+B. Evaluating source credibility
+C. Disabling pop-up blockers
+D. Ignoring HTTPS warnings
+
+Answer: B
+
+5. Why are browser permissions dangerous when over-granted?
+A. They affect battery
+B. They allow tracking or malicious behavior
+C. They block content
+D. They improve UX
+
+Answer: B
+
+
+
+
+		8. Physical Environment Awareness
+
+1. Why does physical environment matter in digital security?
+A. Devices are fragile
+B. People can observe, steal, or tamper physically
+C. Networks disappear
+D. Data encrypts itself
+
+Answer: B
+
+2. What is “shoulder surfing”?
+A. Network attack
+B. Observing someone’s screen or keyboard
+C. Malware technique
+D. Phishing method
+
+Answer: B
+
+3. Which habit reduces physical exposure?
+A. Bright screens
+B. Locking devices when unattended
+C. Sharing devices
+D. Writing passwords down
+
+Answer: B
+
+4. Why are unattended devices risky?
+A. Battery drains
+B. Sessions and data can be accessed directly
+C. Updates stop
+D. Internet disconnects
+
+Answer: B
+
+5. What does physical theft often lead to?
+A. Hardware loss only
+B. Account compromise if devices aren’t protected
+C. Faster recovery
+D. Automatic encryption
+
+Answer: B
+
+
+
+
+		9. Account Monitoring and Early Warning Signs
+
+1. Why is account monitoring critical?
+A. Accounts are static
+B. Early signs often appear before major damage
+C. Alerts are useless
+D. It replaces passwords
+
+Answer: B
+
+2. Which is an early warning sign?
+A. Normal login history
+B. Password reset emails you didn’t request
+C. App updates
+D. Notifications from friends
+
+Answer: B
+
+3. Why should unusual login alerts be taken seriously?
+A. They are marketing messages
+B. They may indicate attempted or successful compromise
+C. They slow systems
+D. They auto-fix issues
+
+Answer: B
+
+4. What is a good response to a suspicious alert?
+A. Ignore it
+B. Change passwords and review account activity
+C. Forward it
+D. Disable notifications
+
+Answer: B
+
+5. Why do attackers rely on delayed detection?
+A. It improves encryption
+B. Time allows deeper compromise and data extraction
+C. Users are fast
+D. Systems self-heal
+
+Answer: B
+
+
+
+
+		10. Long-Term Digital Health
+
+1. What does “long-term digital health” mean?
+A. Faster devices
+B. Sustainable, low-risk digital behavior over time
+C. More accounts
+D. Latest gadgets
+
+Answer: B
+
+2. Why does digital risk accumulate over time?
+A. Data disappears
+B. Accounts, data, and habits compound
+C. Devices self-reset
+D. Passwords strengthen
+
+Answer: B
+
+3. Which habit supports long-term digital health?
+A. Keeping unused accounts forever
+B. Periodic account cleanup and review
+C. Reusing emails
+D. Ignoring breaches
+
+Answer: B
+
+4. Why should old accounts be closed?
+A. They slow email
+B. They remain attack surfaces
+C. They delete data
+D. They improve privacy
+
+Answer: B
+
+5. What is the ultimate goal of safe daily digital habits?
+A. Zero risk
+B. Resilience and reduced impact when things go wrong
+C. Tool dependence
+D. Complexity
+
+Answer: B
+ 
+ 
+ 
