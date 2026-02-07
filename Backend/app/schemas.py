@@ -41,3 +41,7 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
     username: Optional[str] = None
+
+class LeaderboardEntry(BaseModel):
+    username: str
+    xp: int
