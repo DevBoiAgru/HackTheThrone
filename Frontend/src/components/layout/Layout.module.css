@@ -1,0 +1,12 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mainContent {
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    flex: 1;
+    padding: 40px;
+    /* Add subtle hex pattern background later? */
+}

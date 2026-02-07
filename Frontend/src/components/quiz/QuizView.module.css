@@ -1,0 +1,126 @@
+.quizContainer {
+    max-width: 700px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 400px;
+}
+
+.progress {
+    height: 8px;
+    background-color: var(--bg-element);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progressBar {
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.questionCard {
+    margin-bottom: 20px;
+}
+
+.questionCard h2 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.optionsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.optionBtn {
+    background-color: var(--bg-card);
+    border: 2px solid var(--bg-element);
+    padding: 16px 20px;
+    border-radius: var(--radius-md);
+    color: var(--text-main);
+    font-size: 18px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.optionBtn:hover:not(:disabled) {
+    background-color: var(--bg-element);
+    border-color: var(--text-muted);
+}
+
+.optionBtn.selected {
+    border-color: var(--primary);
+    background-color: rgba(250, 204, 21, 0.1);
+}
+
+.optionBtn.correct {
+    border-color: var(--accent-green);
+    background-color: rgba(0, 255, 163, 0.1);
+    color: var(--accent-green);
+}
+
+.optionBtn.incorrect {
+    border-color: var(--accent-red);
+    background-color: rgba(255, 51, 102, 0.1);
+    color: var(--accent-red);
+}
+
+.footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid var(--bg-element);
+    padding-top: 20px;
+}
+
+.checkBtn {
+    background-color: var(--text-main);
+    color: var(--bg-dark);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    padding: 14px 40px;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s;
+}
+
+.checkBtn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.checkBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.checkBtn.correct {
+    background-color: var(--accent-green);
+    color: var(--bg-dark);
+}
+
+.checkBtn.incorrect {
+    background-color: var(--accent-red);
+    color: white;
+}
+
+.feedbackError {
+    color: var(--accent-red);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}

@@ -1,0 +1,39 @@
+.topbar {
+    height: var(--header-height);
+    width: calc(100% - var(--sidebar-width));
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width);
+    display: flex;
+    justify-content: flex-end;
+    /* Align to right */
+    align-items: center;
+    padding: 0 40px;
+    background-color: transparent;
+    /* Or blur effect */
+    backdrop-filter: blur(10px);
+    z-index: 40;
+}
+
+.statsContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.value {
+    color: var(--text-main);
+}

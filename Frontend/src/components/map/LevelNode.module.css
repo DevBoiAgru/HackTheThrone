@@ -1,0 +1,109 @@
+.nodeContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nodeContainer.locked {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.iconWrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main);
+}
+
+.hexBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: var(--bg-card);
+    stroke: var(--bg-element);
+    transition: all 0.3s ease;
+}
+
+/* Status Colors */
+.nodeContainer.completed .hexBg {
+    fill: var(--primary);
+    stroke: var(--primary);
+}
+
+.nodeContainer.completed .content {
+    color: var(--bg-dark);
+}
+
+.nodeContainer.available .hexBg {
+    fill: var(--primary);
+    stroke: var(--primary);
+    filter: drop-shadow(0 0 15px var(--primary-glow));
+}
+
+.nodeContainer.available .content {
+    color: var(--bg-dark);
+    animation: pulse 2s infinite;
+}
+
+.nodeContainer.locked .hexBg {
+    fill: var(--bg-element);
+    stroke: var(--text-muted);
+}
+
+.nodeContainer.locked .content {
+    color: var(--text-muted);
+}
+
+.content {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    margin-top: 12px;
+    background-color: var(--bg-card);
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--bg-element);
+    text-align: center;
+    max-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.nodeContainer:hover .label {
+    border-color: var(--primary);
+}
+
+.nodeContainer:hover .title {
+    color: var(--text-main);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

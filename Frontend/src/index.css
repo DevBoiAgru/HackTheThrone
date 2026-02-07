@@ -1,0 +1,80 @@
+:root {
+  /* Brand Colors - Cyber Hive */
+  --bg-dark: #0f1115;
+  --bg-card: #181b21;
+  --bg-element: #23272f;
+
+  --primary: #facc15;
+  /* Honey Yellow - The Bee connection */
+  --primary-glow: rgba(250, 204, 21, 0.4);
+
+  --accent-green: #00ffa3;
+  /* Success/Safe */
+  --accent-red: #ff3366;
+  /* Danger/Fail */
+  --accent-blue: #00e1ff;
+  /* Info/Cyber */
+
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+
+  /* Font Families */
+  --font-mono: 'Courier New', Courier, monospace;
+  /* Placeholder until we add a web font */
+  --font-sans: system-ui, -apple-system, sans-serif;
+
+  /* Spacing & Layout */
+  --sidebar-width: 260px;
+  --header-height: 70px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-element);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px var(--primary-glow);
+}
