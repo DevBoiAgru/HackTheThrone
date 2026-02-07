@@ -18,6 +18,8 @@ class UserResponse(UserBase):
 class UserProgressResponse(BaseModel):
     user_id: int
     completed_questions: list[int]
+    xp: int
+    lives: int
 
 class QuestionValidateRequest(BaseModel):
     question_number: int

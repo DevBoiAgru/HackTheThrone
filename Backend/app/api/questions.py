@@ -82,4 +82,9 @@ async def validate_answer(request: QuestionValidateRequest, db: Session = Depend
 async def get_user_progress(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     progress = db.query(UserProgress.question_number).filter(UserProgress.user_id == current_user.id).all()
     completed_nums = [p[0] for p in progress]
-    return {"user_id": current_user.id, "completed_questions": completed_nums}
+    return {
+        "user_id": current_user.id,
+        "completed_questions": completed_nums,
+        "xp": current_user.xp,
+        "lives": current_user.lives
+    }
