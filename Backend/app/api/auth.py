@@ -38,6 +38,15 @@ def signup(user: schemas.UserCreate, db: Session = Depends(get_db)):
     if db_user:
         raise HTTPException(status_code=400, detail="Username already registered")
     
+    if len(user.password) < 8:
+        raise HTTPException(status_code=400, detail="Password must be at least 8 characters long")
+    
+    if len(user.username) < 3:
+        raise HTTPException(status_code=400, detail="Username must be at least 3 characters long")
+    
+    if len(user.username) > 16:
+        raise HTTPException(status_code=400, detail="Username must be at most 16 characters long")
+
     hashed_password = auth.get_password_hash(user.password)
     new_user = models.User(username=user.username, hashed_password=hashed_password)
     db.add(new_user)

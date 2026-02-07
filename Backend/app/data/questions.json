@@ -1,35 +1,1835 @@
 {
-    "questions": [
-        {
-            "question_number": 1,
-            "section_number": 1,
-            "title": "Introduction to Passwords",
-            "content": "A password is a secret string of characters used to authenticate a user. It should be unique and complex.",
-            "isQuestion": false,
-            "xp_reward": 10
-        },
-        {
-            "question_number": 2,
-            "section_number": 1,
-            "title": "Password Complexity",
-            "content": "Which of the following is a strong password?",
-            "isQuestion": true,
-            "options": [
-                "123456",
-                "password",
-                "P@ssw0rd2024!",
-                "admin"
-            ],
-            "correct_answer": "P@ssw0rd2024!",
-            "xp_reward": 20
-        },
-        {
-            "question_number": 3,
-            "section_number": 1,
-            "title": "Two-Factor Authentication",
-            "content": "2FA adds an extra layer of security by requiring a second form of identification.",
-            "type": "theory",
-            "xp_reward": 10
-        }
-    ]
+  "questions": [
+    {
+      "question_number": 1,
+      "content": "The internet surrounds daily life like an environment. Digital survival instincts are learned habits that help you stay safe, protect identity, and think clearly instead of reacting emotionally. The goal is control, not quitting technology.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "What Digital Survival Actually Means",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 2,
+      "content": "What does digital survival instincts primarily refer to?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "What Digital Survival Actually Means",
+      "isQuestion": true,
+      "options": [
+        "Advanced hacking techniques",
+        "Natural awareness to stay safe online",
+        "Programming skills",
+        "Social media popularity"
+      ],
+      "correct_answer": "Natural awareness to stay safe online",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 3,
+      "content": "Why are digital survival instincts important today?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "What Digital Survival Actually Means",
+      "isQuestion": true,
+      "options": [
+        "Because everyone uses the internet professionally",
+        "Because threats only affect companies",
+        "Because daily digital actions carry real risks",
+        "Because devices are cheaper"
+      ],
+      "correct_answer": "Because daily digital actions carry real risks",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 4,
+      "content": "Online identity is fragmented across email, phone numbers, passwords, browsing history, and behavior. When combined, these pieces form a powerful model that can be exploited if not protected.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Your Digital Identity Is You",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 5,
+      "content": "A digital identity is best described as:",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Your Digital Identity Is You",
+      "isQuestion": true,
+      "options": [
+        "A single username",
+        "Only social media profiles",
+        "A collection of data linked to a person",
+        "A government ID"
+      ],
+      "correct_answer": "A collection of data linked to a person",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 6,
+      "content": "Why is personal data valuable to companies?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Your Digital Identity Is You",
+      "isQuestion": true,
+      "options": [
+        "It increases bandwidth",
+        "It helps predict user behavior",
+        "It reduces software cost",
+        "It improves hardware"
+      ],
+      "correct_answer": "It helps predict user behavior",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 7,
+      "content": "Every click creates data. Companies use this data to predict, target, and influence behavior. The danger is invisible influence, not just collection.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Data Is the New Blood",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 8,
+      "content": "Why is a free online service rarely free?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Data Is the New Blood",
+      "isQuestion": true,
+      "options": [
+        "Ads pay everything",
+        "Maintenance costs are zero",
+        "User data funds the service",
+        "Governments sponsor them"
+      ],
+      "correct_answer": "User data funds the service",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 9,
+      "content": "Which data type is often underestimated but highly revealing?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Data Is the New Blood",
+      "isQuestion": true,
+      "options": [
+        "Passwords",
+        "Metadata",
+        "Bank statements",
+        "Photos"
+      ],
+      "correct_answer": "Metadata",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 10,
+      "content": "Phishing, malware, and social engineering rely on fear, urgency, and trust. Attackers rarely hack systems; they convince users to open the door.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Threats in the Digital Jungle",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 11,
+      "content": "Phishing attacks are mainly designed to:",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Threats in the Digital Jungle",
+      "isQuestion": true,
+      "options": [
+        "Damage hardware",
+        "Steal personal information",
+        "Improve website ranking",
+        "Test network speed"
+      ],
+      "correct_answer": "Steal personal information",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 12,
+      "content": "Social engineering attacks primarily target:",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Threats in the Digital Jungle",
+      "isQuestion": true,
+      "options": [
+        "Servers",
+        "Databases",
+        "Human psychology",
+        "Firewalls"
+      ],
+      "correct_answer": "Human psychology",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 13,
+      "content": "Attackers exploit curiosity, fear, greed, and laziness. Algorithms do the same. Digital survival requires slowing down. Speed is the enemy.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Psychology Is the Weakest Firewall",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 14,
+      "content": "Which human trait is most commonly exploited in scams?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Psychology Is the Weakest Firewall",
+      "isQuestion": true,
+      "options": [
+        "Intelligence",
+        "Curiosity and fear",
+        "Strength",
+        "Memory"
+      ],
+      "correct_answer": "Curiosity and fear",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 15,
+      "content": "What is the safest reaction to suspicious content?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Psychology Is the Weakest Firewall",
+      "isQuestion": true,
+      "options": [
+        "Click immediately",
+        "Ignore instinct",
+        "Pause and verify",
+        "Share with friends"
+      ],
+      "correct_answer": "Pause and verify",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 16,
+      "content": "Passwords protect access. Reusing passwords causes total collapse after one breach. Two-factor authentication adds a second barrier.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Passwords and Authentication",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 17,
+      "content": "Why is reusing passwords dangerous?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Passwords and Authentication",
+      "isQuestion": true,
+      "options": [
+        "It slows login time",
+        "One breach can expose all accounts",
+        "It uses more storage",
+        "Browsers reject it"
+      ],
+      "correct_answer": "One breach can expose all accounts",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 18,
+      "content": "Two-factor authentication improves security by:",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Passwords and Authentication",
+      "isQuestion": true,
+      "options": [
+        "Making passwords longer",
+        "Adding a second verification step",
+        "Removing passwords",
+        "Blocking all hackers"
+      ],
+      "correct_answer": "Adding a second verification step",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 19,
+      "content": "Social platforms maximize engagement, not safety. Oversharing helps scammers, strangers, and algorithms profile you.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Social Media and Oversharing",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 20,
+      "content": "What makes oversharing dangerous?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Social Media and Oversharing",
+      "isQuestion": true,
+      "options": [
+        "It attracts spam",
+        "It creates exploitable patterns",
+        "It lowers engagement",
+        "It slows the app"
+      ],
+      "correct_answer": "It creates exploitable patterns",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 21,
+      "content": "Which post is riskiest?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Social Media and Oversharing",
+      "isQuestion": true,
+      "options": [
+        "Sharing a meme",
+        "Posting a hobby",
+        "Posting live travel location",
+        "Sharing an opinion"
+      ],
+      "correct_answer": "Posting live travel location",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 22,
+      "content": "False information spreads based on emotion, not truth. Survival requires checking sources, comparing views, and recognizing manipulation.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Misinformation and Thinking",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 23,
+      "content": "Why does misinformation spread easily?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Misinformation and Thinking",
+      "isQuestion": true,
+      "options": [
+        "It is always well-written",
+        "It triggers strong emotions",
+        "It uses better technology",
+        "It is government-backed"
+      ],
+      "correct_answer": "It triggers strong emotions",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 24,
+      "content": "Every online action leaves traces that can be stored, copied, and resurfaced later. Post like future-you is watching.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Digital Footprints",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 25,
+      "content": "Why should digital footprints be considered permanent?",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Digital Footprints",
+      "isQuestion": true,
+      "options": [
+        "Screenshots expire",
+        "The internet forgets",
+        "Content can resurface later",
+        "Posts auto-delete"
+      ],
+      "correct_answer": "Content can resurface later",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 26,
+      "content": "Digital survival includes controlling notifications, taking breaks, and using technology intentionally. Tech should enhance life, not replace it.",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Healthy Relationship with Technology",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 27,
+      "content": "Digital safety is mostly about:",
+      "section_title": "Digital Survival Instincts",
+      "topic_title": "Healthy Relationship with Technology",
+      "isQuestion": true,
+      "options": [
+        "Expensive software",
+        "Fear of technology",
+        "Awareness and habits",
+        "Advanced coding"
+      ],
+      "correct_answer": "Awareness and habits",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 28,
+      "content": "An account is a contract between you and a system stating that actions performed through it are assumed to be yours. Systems evaluate confidence using identity claim, authentication proof, and authorization. They cannot judge intent, only evidence.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "What an Account Really Is",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 29,
+      "content": "What does an online account primarily represent?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "What an Account Really Is",
+      "isQuestion": true,
+      "options": [
+        "A device",
+        "A person's digital identity on a service",
+        "A software license",
+        "A file storage area"
+      ],
+      "correct_answer": "A person's digital identity on a service",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 30,
+      "content": "Authentication systems primarily aim to:",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "What an Account Really Is",
+      "isQuestion": true,
+      "options": [
+        "Identify users with certainty",
+        "Eliminate all attacks",
+        "Manage risk by increasing confidence",
+        "Track user behavior"
+      ],
+      "correct_answer": "Manage risk by increasing confidence",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 31,
+      "content": "Passwords are guessable, reusable, phishable, and forgettable. Strength comes from search space, not visual complexity. Length and randomness matter more than symbols.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Passwords: Ancient and Flawed",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 32,
+      "content": "Why do passwords still exist despite being insecure?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Passwords: Ancient and Flawed",
+      "isQuestion": true,
+      "options": [
+        "They are unbreakable",
+        "They are cheap, simple, and human-readable",
+        "They are the most secure method",
+        "They cannot be replaced"
+      ],
+      "correct_answer": "They are cheap, simple, and human-readable",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 33,
+      "content": "What mainly determines password strength?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Passwords: Ancient and Flawed",
+      "isQuestion": true,
+      "options": [
+        "Use of symbols",
+        "Visual complexity",
+        "Search space size",
+        "Capital letters"
+      ],
+      "correct_answer": "Search space size",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 34,
+      "content": "Secure systems store password hashes, not plaintext. Hashing is one-way, slow by design, and salted to prevent precomputed attacks. Leaks usually expose hashes, not actual passwords.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Password Storage",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 35,
+      "content": "Why don't secure systems store actual passwords?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Password Storage",
+      "isQuestion": true,
+      "options": [
+        "It takes too much space",
+        "Passwords change too often",
+        "Direct storage would expose all users if leaked",
+        "Passwords are hard to manage"
+      ],
+      "correct_answer": "Direct storage would expose all users if leaked",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 36,
+      "content": "What is the role of a salt in hashing?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Password Storage",
+      "isQuestion": true,
+      "options": [
+        "Make passwords memorable",
+        "Hide usernames",
+        "Prevent rainbow table attacks",
+        "Speed up hashing"
+      ],
+      "correct_answer": "Prevent rainbow table attacks",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 37,
+      "content": "Authentication relies on something you know, have, or are. True 2FA uses two different factor types. Hardware keys are strongest because they cannot be phished remotely.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Factors",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 38,
+      "content": "Which is an example of something you have?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Factors",
+      "isQuestion": true,
+      "options": [
+        "Password",
+        "PIN",
+        "Fingerprint",
+        "Hardware security key"
+      ],
+      "correct_answer": "Hardware security key",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 39,
+      "content": "Why is SMS-based 2FA considered weak?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Factors",
+      "isQuestion": true,
+      "options": [
+        "Messages expire quickly",
+        "SMS is slow",
+        "SIM cards can be hijacked",
+        "Phones may not receive messages"
+      ],
+      "correct_answer": "SIM cards can be hijacked",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 40,
+      "content": "Authenticator apps generate time-based one-time passwords using a shared secret and current time. Codes expire quickly, limiting usefulness if intercepted.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Apps",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 41,
+      "content": "How are TOTP codes generated?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Apps",
+      "isQuestion": true,
+      "options": [
+        "From the user's password",
+        "From internet connectivity",
+        "From a shared secret and time",
+        "From phone number"
+      ],
+      "correct_answer": "From a shared secret and time",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 42,
+      "content": "Why is device loss risky with authenticator apps?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Authentication Apps",
+      "isQuestion": true,
+      "options": [
+        "Apps expire",
+        "Codes stop working",
+        "You may be locked out without backups",
+        "Passwords reset automatically"
+      ],
+      "correct_answer": "You may be locked out without backups",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 43,
+      "content": "After login, session tokens prove authentication. If stolen, attackers can impersonate you without knowing your password until the session expires.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Sessions and Tokens",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 44,
+      "content": "Why is stealing a session cookie dangerous?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Sessions and Tokens",
+      "isQuestion": true,
+      "options": [
+        "It reveals the password",
+        "It allows impersonation without credentials",
+        "It deletes the account",
+        "It infects the browser"
+      ],
+      "correct_answer": "It allows impersonation without credentials",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 45,
+      "content": "Account recovery often bypasses normal security. Security questions and outdated recovery emails allow attackers to take control quickly.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Account Recovery",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 46,
+      "content": "Why is account recovery often the weakest link?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Account Recovery",
+      "isQuestion": true,
+      "options": [
+        "It is rarely used",
+        "It bypasses normal authentication",
+        "It uses old software",
+        "It requires internet access"
+      ],
+      "correct_answer": "It bypasses normal authentication",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 47,
+      "content": "Zero Trust assumes no environment is safe. Access is continuously evaluated based on context, behavior, and risk.",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Zero Trust",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 48,
+      "content": "What is the core idea behind Zero Trust?",
+      "section_title": "Accounts, Passwords and Authentication",
+      "topic_title": "Zero Trust",
+      "isQuestion": true,
+      "options": [
+        "Trust internal users",
+        "Block all access",
+        "Never assume trust; always verify",
+        "Remove authentication"
+      ],
+      "correct_answer": "Never assume trust; always verify",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 49,
+      "content": "Data is reality converted into symbols machines can process. Systems value data for predictive usefulness, not human truth. Even incomplete or incorrect data can influence decisions.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Data as the Digital Building Block",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 50,
+      "content": "What is data at its most basic level?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Data as the Digital Building Block",
+      "isQuestion": true,
+      "options": [
+        "Objective truth",
+        "Reality converted into symbols",
+        "Verified human knowledge",
+        "Ethical information"
+      ],
+      "correct_answer": "Reality converted into symbols",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 51,
+      "content": "Why do systems value imperfect data?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Data as the Digital Building Block",
+      "isQuestion": true,
+      "options": [
+        "Storage is cheap",
+        "Humans can correct it",
+        "Predictive usefulness matters more than accuracy",
+        "Laws require retention"
+      ],
+      "correct_answer": "Predictive usefulness matters more than accuracy",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 52,
+      "content": "Data flows through collection, aggregation, normalization, enrichment, modeling, deployment, and retention. After enrichment, data becomes something about you that you never approved.",
+      "section_title": "Data and Privacy",
+      "topic_title": "The Data Lifecycle",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 53,
+      "content": "What is the first stage in the data lifecycle?",
+      "section_title": "Data and Privacy",
+      "topic_title": "The Data Lifecycle",
+      "isQuestion": true,
+      "options": [
+        "Analysis",
+        "Storage",
+        "Collection",
+        "Modeling"
+      ],
+      "correct_answer": "Collection",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 54,
+      "content": "Why does data persist after its original purpose?",
+      "section_title": "Data and Privacy",
+      "topic_title": "The Data Lifecycle",
+      "isQuestion": true,
+      "options": [
+        "Deletion is impossible",
+        "Storage is free",
+        "Future predictive value is unknown",
+        "Law requires it"
+      ],
+      "correct_answer": "Future predictive value is unknown",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 55,
+      "content": "Direct data is what you provide. Behavioral data is how you act. Inferred data is what systems predict about you. Inferred data is invisible, rarely correctable, and often treated as fact.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Types of Data",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 56,
+      "content": "Which data type is created without you providing it?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Types of Data",
+      "isQuestion": true,
+      "options": [
+        "Account credentials",
+        "Uploaded documents",
+        "Derived or inferred data",
+        "Identification data"
+      ],
+      "correct_answer": "Derived or inferred data",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 57,
+      "content": "Why is behavioral data more valuable than declarations?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Types of Data",
+      "isQuestion": true,
+      "options": [
+        "It is encrypted",
+        "People lie but behavior leaks truth",
+        "It is cheaper to collect",
+        "It expires quickly"
+      ],
+      "correct_answer": "People lie but behavior leaks truth",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 58,
+      "content": "Metadata describes when, where, how, and with whom. Communication graphs reveal social structure and routines even without content.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Metadata",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 59,
+      "content": "Why is metadata highly sensitive?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Metadata",
+      "isQuestion": true,
+      "options": [
+        "It is hard to encrypt",
+        "It reveals patterns and relationships",
+        "It stores passwords",
+        "It is public"
+      ],
+      "correct_answer": "It reveals patterns and relationships",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 60,
+      "content": "Modern tracking uses fingerprinting, cross-device correlation, and network signals. Identity reappears when datasets intersect.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Tracking Technologies",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 61,
+      "content": "Why is browser fingerprinting hard to block?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Tracking Technologies",
+      "isQuestion": true,
+      "options": [
+        "It uses pop-ups",
+        "It relies on unique device characteristics",
+        "It requires permission",
+        "It slows browsers"
+      ],
+      "correct_answer": "It relies on unique device characteristics",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 62,
+      "content": "Consent systems overwhelm users with legal language and no alternatives. Clicking OK shifts liability without empowering users.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Consent Failure",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 63,
+      "content": "Why is digital consent often a structural failure?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Consent Failure",
+      "isQuestion": true,
+      "options": [
+        "Users ignore privacy",
+        "Interfaces push agreement without comprehension",
+        "Laws are perfect",
+        "Users refuse to read"
+      ],
+      "correct_answer": "Interfaces push agreement without comprehension",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 64,
+      "content": "Privacy is contextual. Digital systems collapse context by reusing data across purposes, causing unintended exposure.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Contextual Privacy",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 65,
+      "content": "What does contextual privacy mean?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Contextual Privacy",
+      "isQuestion": true,
+      "options": [
+        "All data must be private",
+        "Privacy depends on purpose and audience",
+        "Privacy is identical everywhere",
+        "Delete accounts to fix it"
+      ],
+      "correct_answer": "Privacy depends on purpose and audience",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 66,
+      "content": "Stored data outlives purpose. What was harmless yesterday can be damaging tomorrow. Perfect security does not justify permanent storage.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Data Retention",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 67,
+      "content": "Why is long-term data retention risky?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Data Retention",
+      "isQuestion": true,
+      "options": [
+        "Older data is encrypted",
+        "Data accumulates and increases attack surface",
+        "It improves accuracy",
+        "It speeds devices"
+      ],
+      "correct_answer": "Data accumulates and increases attack surface",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 68,
+      "content": "Differential privacy, federated learning, and encryption reduce harm but do not rebalance power. Privacy erosion is a governance problem.",
+      "section_title": "Data and Privacy",
+      "topic_title": "Privacy-Preserving Technologies",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 69,
+      "content": "What is a limitation of privacy-preserving technologies?",
+      "section_title": "Data and Privacy",
+      "topic_title": "Privacy-Preserving Technologies",
+      "isQuestion": true,
+      "options": [
+        "They are free",
+        "They eliminate all risk",
+        "They can reduce utility or be complex",
+        "They remove passwords"
+      ],
+      "correct_answer": "They can reduce utility or be complex",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 70,
+      "content": "A digital threat is any intentional use of technology to compromise confidentiality, integrity, availability, or control. If a system acts as if an attacker is you, it is compromised even if nothing is visibly broken.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "What a Digital Threat Really Is",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 71,
+      "content": "What defines a digital threat?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "What a Digital Threat Really Is",
+      "isQuestion": true,
+      "options": [
+        "Any virus that deletes files",
+        "Anything that can harm systems, data, or users",
+        "Only self-spreading malware",
+        "Only phishing emails"
+      ],
+      "correct_answer": "Anything that can harm systems, data, or users",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 72,
+      "content": "Why do digital threats remain relevant even on patched systems?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "What a Digital Threat Really Is",
+      "isQuestion": true,
+      "options": [
+        "Attackers are lazy",
+        "They exploit unknown flaws and human behavior",
+        "Antivirus is perfect",
+        "Systems are slow"
+      ],
+      "correct_answer": "They exploit unknown flaws and human behavior",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 73,
+      "content": "Malware follows a lifecycle: delivery, execution, persistence, privilege escalation, command and control, payload execution, and monetization. The goal is sustainable access, not chaos.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "The Malware Lifecycle",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 74,
+      "content": "What is the first stage of the malware lifecycle?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "The Malware Lifecycle",
+      "isQuestion": true,
+      "options": [
+        "Profit extraction",
+        "Infection or entry",
+        "Exploitation",
+        "Detection"
+      ],
+      "correct_answer": "Infection or entry",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 75,
+      "content": "What is the main goal of the payload stage?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "The Malware Lifecycle",
+      "isQuestion": true,
+      "options": [
+        "Spread malware",
+        "Execute theft, encryption, or spying",
+        "Clean up traces",
+        "Alert the user"
+      ],
+      "correct_answer": "Execute theft, encryption, or spying",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 76,
+      "content": "Malware enters through email attachments, malicious links, fake updates, compromised sites, ads, and supply chains. Humans are the primary entry point.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Attack Vectors",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 77,
+      "content": "Which is a common malware attack vector?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Attack Vectors",
+      "isQuestion": true,
+      "options": [
+        "Email attachments and links",
+        "Air conditioning",
+        "Monitor brightness",
+        "USB power cables"
+      ],
+      "correct_answer": "Email attachments and links",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 78,
+      "content": "Why is social engineering so effective?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Attack Vectors",
+      "isQuestion": true,
+      "options": [
+        "It encrypts malware",
+        "It manipulates human behavior to bypass controls",
+        "It targets hardware",
+        "It slows malware spread"
+      ],
+      "correct_answer": "It manipulates human behavior to bypass controls",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 79,
+      "content": "Vulnerabilities are flaws in software or configuration. Exploits weaponize them. Once inside, malware escalates privileges and moves laterally.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Exploits and Vulnerabilities",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 80,
+      "content": "What is an exploit?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Exploits and Vulnerabilities",
+      "isQuestion": true,
+      "options": [
+        "A security patch",
+        "Code used to take advantage of a vulnerability",
+        "A payload",
+        "A scanner"
+      ],
+      "correct_answer": "Code used to take advantage of a vulnerability",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 81,
+      "content": "Why are zero-day vulnerabilities dangerous?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Exploits and Vulnerabilities",
+      "isQuestion": true,
+      "options": [
+        "They are harmless",
+        "They are unknown and unpatched",
+        "They only affect old systems",
+        "They are encrypted"
+      ],
+      "correct_answer": "They are unknown and unpatched",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 82,
+      "content": "C2 servers allow attackers to control infected machines, update malware, and steal data. Modern C2 hides inside normal encrypted traffic.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Command and Control",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 83,
+      "content": "Why is disrupting C2 important?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Command and Control",
+      "isQuestion": true,
+      "options": [
+        "It deletes files",
+        "It cuts off attacker control",
+        "It prevents phishing",
+        "It speeds networks"
+      ],
+      "correct_answer": "It cuts off attacker control",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 84,
+      "content": "Botnets are networks of compromised devices used for DDoS, spam, credential stuffing, and mining. IoT devices are prime targets.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Botnets and Scale",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 85,
+      "content": "What is a botnet?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Botnets and Scale",
+      "isQuestion": true,
+      "options": [
+        "A single malware instance",
+        "A network of compromised devices",
+        "A firewall",
+        "An antivirus tool"
+      ],
+      "correct_answer": "A network of compromised devices",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 86,
+      "content": "Supply chain attacks compromise trusted vendors or updates. Defense models fail because the malware arrives through legitimate channels.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Supply Chain Attacks",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 87,
+      "content": "Why are supply chain attacks dangerous?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Supply Chain Attacks",
+      "isQuestion": true,
+      "options": [
+        "They are easy to detect",
+        "They exploit trusted software and spread widely",
+        "They affect one user",
+        "They require manual execution"
+      ],
+      "correct_answer": "They exploit trusted software and spread widely",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 88,
+      "content": "Modern malware uses polymorphism, encryption, delayed execution, and system tools to evade detection. Defense must be layered.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Detection Challenges",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 89,
+      "content": "What is polymorphic malware?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Detection Challenges",
+      "isQuestion": true,
+      "options": [
+        "Self-deleting malware",
+        "Malware that changes code to evade detection",
+        "IoT-only malware",
+        "Open-source malware"
+      ],
+      "correct_answer": "Malware that changes code to evade detection",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 90,
+      "content": "Malware causes financial loss, stress, shame, and loss of trust. Attackers exploit emotional responses deliberately.",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Human Cost",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 91,
+      "content": "Why is awareness training critical?",
+      "section_title": "Malware and Digital Threats",
+      "topic_title": "Human Cost",
+      "isQuestion": true,
+      "options": [
+        "It replaces antivirus",
+        "It reduces success of phishing and manipulation",
+        "It removes malware",
+        "It speeds networks"
+      ],
+      "correct_answer": "It reduces success of phishing and manipulation",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 92,
+      "content": "Most digital failures occur due to inconsistent habits, not missing tools. Habits slow down decisions when attackers rely on urgency, fatigue, and distraction.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Why Daily Habits Matter More Than Tools",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 93,
+      "content": "Why are daily digital habits often more effective than tools alone?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Why Daily Habits Matter More Than Tools",
+      "isQuestion": true,
+      "options": [
+        "Tools remove the need for judgment",
+        "Habits reduce exposure before tools act",
+        "Tools never fail",
+        "Habits replace encryption"
+      ],
+      "correct_answer": "Habits reduce exposure before tools act",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 94,
+      "content": "Why do attackers prefer habit-based weaknesses?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Why Daily Habits Matter More Than Tools",
+      "isQuestion": true,
+      "options": [
+        "They are harder to exploit",
+        "Humans are predictable under pressure",
+        "Tools block all attacks",
+        "Habits are encrypted"
+      ],
+      "correct_answer": "Humans are predictable under pressure",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 95,
+      "content": "Email and messaging platforms blend urgency, authority, and familiarity. Verifying requests through a second channel reduces phishing success.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Email and Messaging Discipline",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 96,
+      "content": "Why is email still a primary attack vector?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Email and Messaging Discipline",
+      "isQuestion": true,
+      "options": [
+        "It is encrypted",
+        "It blends urgency, trust, and familiarity",
+        "It is slow",
+        "It blocks malware"
+      ],
+      "correct_answer": "It blends urgency, trust, and familiarity",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 97,
+      "content": "What habit reduces phishing success the most?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Email and Messaging Discipline",
+      "isQuestion": true,
+      "options": [
+        "Clicking quickly",
+        "Verifying via a second channel",
+        "Saving passwords in email",
+        "Ignoring alerts"
+      ],
+      "correct_answer": "Verifying via a second channel",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 98,
+      "content": "Strong systems fail if users reuse passwords, ignore alerts, or stay logged in on shared devices. Login prompts are security checkpoints.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Password and Login Behavior",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 99,
+      "content": "Which habit most reduces account compromise risk?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Password and Login Behavior",
+      "isQuestion": true,
+      "options": [
+        "Reusing strong passwords",
+        "Unique passwords per account",
+        "Daily password changes",
+        "Writing passwords down"
+      ],
+      "correct_answer": "Unique passwords per account",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 100,
+      "content": "Why should login alerts never be ignored?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Password and Login Behavior",
+      "isQuestion": true,
+      "options": [
+        "They are always false",
+        "They may signal early compromise",
+        "They slow systems",
+        "They increase spam"
+      ],
+      "correct_answer": "They may signal early compromise",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 101,
+      "content": "Lock screens, remove unused apps, install updates, and avoid pirated software. Updates fix known weaknesses, not features.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Device Hygiene",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 102,
+      "content": "Why are unused apps a risk?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Device Hygiene",
+      "isQuestion": true,
+      "options": [
+        "They consume storage",
+        "They may have unpatched vulnerabilities",
+        "They slow typing",
+        "They encrypt files"
+      ],
+      "correct_answer": "They may have unpatched vulnerabilities",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 103,
+      "content": "Public Wi-Fi can intercept traffic. Avoid sensitive logins, prefer mobile data, verify HTTPS, and disable auto-connect.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Network Awareness",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 104,
+      "content": "Why is public Wi-Fi risky?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Network Awareness",
+      "isQuestion": true,
+      "options": [
+        "It is slow",
+        "Traffic can be intercepted or manipulated",
+        "It deletes cookies",
+        "It blocks encryption"
+      ],
+      "correct_answer": "Traffic can be intercepted or manipulated",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 105,
+      "content": "Regular automated backups with multiple copies turn ransomware and failure into inconvenience.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Backups as Habit",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 106,
+      "content": "Why do backups reduce ransomware impact?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Backups as Habit",
+      "isQuestion": true,
+      "options": [
+        "They attract attackers",
+        "They eliminate ransom leverage",
+        "They spread malware",
+        "They slow systems"
+      ],
+      "correct_answer": "They eliminate ransom leverage",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 107,
+      "content": "Check domains, avoid suspicious pop-ups, limit extensions, and evaluate sources. Emotional spikes reduce awareness.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Browsing and Content Habits",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 108,
+      "content": "Why are pirated or free-content sites risky?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Browsing and Content Habits",
+      "isQuestion": true,
+      "options": [
+        "They are illegal only",
+        "They often bundle malware or malicious ads",
+        "They lack encryption",
+        "They load slowly"
+      ],
+      "correct_answer": "They often bundle malware or malicious ads",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 109,
+      "content": "Shoulder surfing, unattended devices, and unknown USBs bypass digital controls. Lock devices and secure them physically.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Physical Environment Awareness",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 110,
+      "content": "What is shoulder surfing?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Physical Environment Awareness",
+      "isQuestion": true,
+      "options": [
+        "Network attack",
+        "Observing screens or keyboards",
+        "Phishing method",
+        "Malware technique"
+      ],
+      "correct_answer": "Observing screens or keyboards",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 111,
+      "content": "Unusual emails, password reset alerts, and login warnings often precede major compromise. Speed matters.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Account Monitoring",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 112,
+      "content": "Why is account monitoring critical?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Account Monitoring",
+      "isQuestion": true,
+      "options": [
+        "Accounts are static",
+        "Early signs appear before major damage",
+        "Alerts are useless",
+        "It replaces passwords"
+      ],
+      "correct_answer": "Early signs appear before major damage",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 113,
+      "content": "Daily habits reduce attack surface, build intuition, and lower cognitive load. Security succeeds when it becomes routine.",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Long-Term Digital Health",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 114,
+      "content": "What is the ultimate goal of safe daily digital habits?",
+      "section_title": "Safe Daily Digital Habits",
+      "topic_title": "Long-Term Digital Health",
+      "isQuestion": true,
+      "options": [
+        "Zero risk",
+        "Resilience and reduced impact",
+        "Tool dependence",
+        "Complexity"
+      ],
+      "correct_answer": "Resilience and reduced impact",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 115,
+      "content": "Social media platforms shape behavior continuously. Even passive exposure influences mood, beliefs, and reactions. Treating them as neutral tools ignores their conditioning effects.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Social Media Is an Environment",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 116,
+      "content": "Why is social media better described as an environment than a tool?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Social Media Is an Environment",
+      "isQuestion": true,
+      "options": [
+        "It performs one function",
+        "It continuously shapes behavior and attention",
+        "It stores files",
+        "It is optional software"
+      ],
+      "correct_answer": "It continuously shapes behavior and attention",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 117,
+      "content": "Why is passive scrolling still influential?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Social Media Is an Environment",
+      "isQuestion": true,
+      "options": [
+        "Content is random",
+        "Exposure affects perception without interaction",
+        "It improves memory",
+        "It increases security"
+      ],
+      "correct_answer": "Exposure affects perception without interaction",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 118,
+      "content": "Algorithms prioritize content likely to keep you engaged. Over time, this narrows exposure, distorts perceived consensus, and creates echo chambers.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Algorithmic Mediation of Reality",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 119,
+      "content": "What does algorithmic mediation mean?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Algorithmic Mediation of Reality",
+      "isQuestion": true,
+      "options": [
+        "Humans select all content",
+        "Algorithms filter and prioritize content",
+        "Feeds are chronological",
+        "Ads are hidden"
+      ],
+      "correct_answer": "Algorithms filter and prioritize content",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 120,
+      "content": "What survival instinct helps counter algorithmic feeds?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Algorithmic Mediation of Reality",
+      "isQuestion": true,
+      "options": [
+        "Trust the feed",
+        "Diversify information sources",
+        "Scroll longer",
+        "Disable updates"
+      ],
+      "correct_answer": "Diversify information sources",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 121,
+      "content": "Likes, shares, and followers act as social rewards. Visibility feels like value, even when it is not, leading to exaggeration and comparison.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Quantified Social Status",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 122,
+      "content": "What is quantified social status?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Quantified Social Status",
+      "isQuestion": true,
+      "options": [
+        "Income tracking",
+        "Metrics like likes and followers",
+        "Account verification",
+        "Encrypted messaging"
+      ],
+      "correct_answer": "Metrics like likes and followers",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 123,
+      "content": "What is a healthier interpretation of social metrics?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Quantified Social Status",
+      "isQuestion": true,
+      "options": [
+        "Objective personal worth",
+        "Signals of platform engagement",
+        "Long-term value",
+        "Security indicators"
+      ],
+      "correct_answer": "Signals of platform engagement",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 124,
+      "content": "Anonymity and lack of immediate consequences cause people to behave more extremely online. Pausing before posting counters this.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Online Disinhibition",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 125,
+      "content": "What is the online disinhibition effect?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Online Disinhibition",
+      "isQuestion": true,
+      "options": [
+        "Faster typing",
+        "Reduced restraint online",
+        "Better communication",
+        "Increased privacy"
+      ],
+      "correct_answer": "Reduced restraint online",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 126,
+      "content": "Attackers exploit social graphs, familiarity, and urgency. Every interaction trains systems to influence you more effectively.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Social Engineering via Platforms",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 127,
+      "content": "Why are social platforms ideal for social engineering?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Social Engineering via Platforms",
+      "isQuestion": true,
+      "options": [
+        "They block malware",
+        "They expose trust cues and social graphs",
+        "They encrypt messages",
+        "They limit visibility"
+      ],
+      "correct_answer": "They expose trust cues and social graphs",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 128,
+      "content": "Avoid rage-clicking, mute instead of engaging, set time limits, and delay posting during emotional spikes.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Conscious Consumption",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 129,
+      "content": "What does conscious consumption mean?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Conscious Consumption",
+      "isQuestion": true,
+      "options": [
+        "Avoid all platforms",
+        "Choose content intentionally",
+        "Consume more content",
+        "Trust algorithms"
+      ],
+      "correct_answer": "Choose content intentionally",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 130,
+      "content": "Avoid real-time location sharing, protect friends' privacy, and separate public and private identities.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Identity Protection",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 131,
+      "content": "Why is oversharing a long-term risk?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Identity Protection",
+      "isQuestion": true,
+      "options": [
+        "It uses storage",
+        "Data persists and can be recontextualized",
+        "It slows feeds",
+        "It increases engagement"
+      ],
+      "correct_answer": "Data persists and can be recontextualized",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 132,
+      "content": "Intentional use means aligning platform behavior with personal goals. Habits outlast features and policies.",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Intentional Use",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 133,
+      "content": "What is the ultimate goal of intentional social media use?",
+      "section_title": "Social Media and Online Behavior",
+      "topic_title": "Intentional Use",
+      "isQuestion": true,
+      "options": [
+        "Maximum visibility",
+        "Retaining agency over attention and identity",
+        "More followers",
+        "Algorithmic approval"
+      ],
+      "correct_answer": "Retaining agency over attention and identity",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 134,
+      "content": "Phones are always on, always connected, and always personal. They anchor email, 2FA, banking, and SIM identity. Losing control of a phone enables attackers to reset everything else.",
+      "section_title": "Mobile Security",
+      "topic_title": "Why Mobile Security Is Uniquely Dangerous",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 135,
+      "content": "Why are mobile devices higher-risk than desktops?",
+      "section_title": "Mobile Security",
+      "topic_title": "Why Mobile Security Is Uniquely Dangerous",
+      "isQuestion": true,
+      "options": [
+        "They use weaker hardware",
+        "They combine identity, location, sensors, and authentication",
+        "They lack encryption",
+        "They don't receive updates"
+      ],
+      "correct_answer": "They combine identity, location, sensors, and authentication",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 136,
+      "content": "What user behavior increases mobile risk most?",
+      "section_title": "Mobile Security",
+      "topic_title": "Why Mobile Security Is Uniquely Dangerous",
+      "isQuestion": true,
+      "options": [
+        "Short battery life",
+        "Treating phones as safe by default",
+        "Using apps",
+        "Touch input"
+      ],
+      "correct_answer": "Treating phones as safe by default",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 137,
+      "content": "Modern mobile OSs rely on sandboxing, permission models, and hardware-backed secure enclaves. Failures usually occur due to over-permissioned apps and consent fatigue.",
+      "section_title": "Mobile Security",
+      "topic_title": "Mobile OS Architecture",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 138,
+      "content": "What does sandboxing prevent?",
+      "section_title": "Mobile Security",
+      "topic_title": "Mobile OS Architecture",
+      "isQuestion": true,
+      "options": [
+        "App installation",
+        "Apps accessing each other's data",
+        "Network access",
+        "App updates"
+      ],
+      "correct_answer": "Apps accessing each other's data",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 139,
+      "content": "Where does the mobile security model break down?",
+      "section_title": "Mobile Security",
+      "topic_title": "Mobile OS Architecture",
+      "isQuestion": true,
+      "options": [
+        "Hardware failure",
+        "Over-permissioned apps and consent fatigue",
+        "Encryption strength",
+        "OS updates"
+      ],
+      "correct_answer": "Over-permissioned apps and consent fatigue",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 140,
+      "content": "Mobile malware targets credentials, messages, sensors, and payments. Spyware, banking trojans, adware, and stalkerware rely on stealth and user trust.",
+      "section_title": "Mobile Security",
+      "topic_title": "Mobile Malware",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 141,
+      "content": "Why does mobile malware focus heavily on permissions?",
+      "section_title": "Mobile Security",
+      "topic_title": "Mobile Malware",
+      "isQuestion": true,
+      "options": [
+        "Permissions are cosmetic",
+        "Permissions gate sensors, messages, and identity",
+        "They slow systems",
+        "They block updates"
+      ],
+      "correct_answer": "Permissions gate sensors, messages, and identity",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 142,
+      "content": "Official app stores reduce risk but cannot prevent delayed malicious updates, SDK abuse, or supply-chain compromise. Permissions remain the real control layer.",
+      "section_title": "Mobile Security",
+      "topic_title": "App Stores and Permissions",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 143,
+      "content": "Why aren't app stores perfect protection?",
+      "section_title": "Mobile Security",
+      "topic_title": "App Stores and Permissions",
+      "isQuestion": true,
+      "options": [
+        "They don't scan apps",
+        "Malicious behavior can be delayed or hidden",
+        "Apps aren't reviewed",
+        "Users can't report apps"
+      ],
+      "correct_answer": "Malicious behavior can be delayed or hidden",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 144,
+      "content": "Motion, light, and proximity sensors can infer keystrokes, speech, and location without explicit permissions. Sensor fusion reconstructs lifestyle patterns.",
+      "section_title": "Mobile Security",
+      "topic_title": "Sensors and Side Channels",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 145,
+      "content": "What is the real danger of sensor fusion?",
+      "section_title": "Mobile Security",
+      "topic_title": "Sensors and Side Channels",
+      "isQuestion": true,
+      "options": [
+        "Battery drain",
+        "Low-risk sensors combine into high-risk inference",
+        "OS crashes",
+        "UI lag"
+      ],
+      "correct_answer": "Low-risk sensors combine into high-risk inference",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 146,
+      "content": "Public Wi-Fi, IMSI catchers, and SIM-swap attacks bypass device security. SMS-based authentication collapses under telecom compromise.",
+      "section_title": "Mobile Security",
+      "topic_title": "Network and SIM Threats",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 147,
+      "content": "What is SIM swapping?",
+      "section_title": "Mobile Security",
+      "topic_title": "Network and SIM Threats",
+      "isQuestion": true,
+      "options": [
+        "Phone repair",
+        "Number transferred to attacker-controlled SIM",
+        "Device cloning",
+        "Malware technique"
+      ],
+      "correct_answer": "Number transferred to attacker-controlled SIM",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 148,
+      "content": "Strong locks, short auto-lock timers, and hidden previews matter. Biometrics add convenience but rely on strong fallback PINs.",
+      "section_title": "Mobile Security",
+      "topic_title": "Lock Screens and Biometrics",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 149,
+      "content": "Why are biometrics considered conditional security?",
+      "section_title": "Mobile Security",
+      "topic_title": "Lock Screens and Biometrics",
+      "isQuestion": true,
+      "options": [
+        "They expire",
+        "They rely on hardware and fallback methods",
+        "They are slow",
+        "They require internet"
+      ],
+      "correct_answer": "They rely on hardware and fallback methods",
+      "xp_reward": 10
+    },
+    {
+      "question_number": 150,
+      "content": "Strong PINs, regular permission reviews, disabling unused radios, avoiding SMS 2FA, and treating phone loss as an emergency reduce impact.",
+      "section_title": "Mobile Security",
+      "topic_title": "Daily Mobile Security Habits",
+      "isQuestion": false,
+      "xp_reward": 5
+    },
+    {
+      "question_number": 151,
+      "content": "What mindset best protects mobile security?",
+      "section_title": "Mobile Security",
+      "topic_title": "Daily Mobile Security Habits",
+      "isQuestion": true,
+      "options": [
+        "Paranoia",
+        "Assume exposure, minimize impact",
+        "Blind trust",
+        "Tool dependence"
+      ],
+      "correct_answer": "Assume exposure, minimize impact",
+      "xp_reward": 10
+    }
+  ]
 }

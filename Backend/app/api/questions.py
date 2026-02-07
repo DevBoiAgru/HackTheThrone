@@ -57,9 +57,9 @@ async def validate_answer(request: QuestionValidateRequest, db: Session = Depend
         if not existing:
             new_progress = UserProgress(user_id=current_user.id, question_number=request.question_number)
             db.add(new_progress)
-            current_user.xp += question["xp_reward"]
+            current_user.xp += question.get("xp_reward", 0)
             db.commit()
-        return {"status": "success", "message": "Theory slide completed", "xp_awarded": question["xp_reward"]}
+        return {"status": "success", "message": "Theory slide completed", "xp_awarded": question.get("xp_reward", 0)}
 
     # Quiz validation
     if request.answer == question.get("correct_answer"):
@@ -70,9 +70,9 @@ async def validate_answer(request: QuestionValidateRequest, db: Session = Depend
         if not existing:
             new_progress = UserProgress(user_id=current_user.id, question_number=request.question_number)
             db.add(new_progress)
-            current_user.xp += question["xp_reward"]
+            current_user.xp += question.get("xp_reward", 0)
             db.commit()
-        return {"status": "success", "message": "Correct answer!", "xp_awarded": question["xp_reward"]}
+        return {"status": "success", "message": "Correct answer!", "xp_awarded": question.get("xp_reward", 0)}
     else:
         current_user.lives -= 1
         db.commit()
