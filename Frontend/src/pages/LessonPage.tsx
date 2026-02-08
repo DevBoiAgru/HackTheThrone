@@ -3,7 +3,7 @@ import LevelNode from '../components/map/LevelNode'
 import MissionPlayer from '../components/quiz/MissionPlayer'
 import { Chapters } from '../data/chapters'
 import { useParams } from 'react-router-dom'
-import { positionOnVerticalSineWave, getuserprog } from '../utils/Utils'
+import { positionOnVerticalSineWave, apiFetch, UserProgress } from '../utils/Utils'
 
 const SVG_WIDTH = 100
 const BOTTOM_PADDING = 120
@@ -56,21 +56,21 @@ const LessonPage = () => {
 
       console.log('Fetching user progress...')
       let highestCompleted = 0
-      
+
       try {
-        const progressData = await getuserprog()
+        const progressData = await apiFetch<UserProgress>('/questions/user/progress')
         console.log('Progress data:', progressData)
-        
+
         // Check for completed_questions array
         if (progressData?.completed_questions && Array.isArray(progressData.completed_questions)) {
-          highestCompleted = progressData.completed_questions.length > 0 
+          highestCompleted = progressData.completed_questions.length > 0
             ? Math.max(...progressData.completed_questions)
             : 0
           console.log('Completed questions:', progressData.completed_questions)
         } else {
           highestCompleted = progressData?.highest_completed || 0
         }
-        
+
         console.log('Highest completed:', highestCompleted)
       } catch (err) {
         console.error('Failed to fetch progress:', err)
@@ -86,7 +86,7 @@ const LessonPage = () => {
         { length: totalQuestions },
         (_, index) => {
           const questionNumber = chapter.quest_start + index
-          
+
           let status: 'locked' | 'available' | 'completed'
           if (questionNumber <= highestCompleted) {
             status = 'completed'
@@ -112,7 +112,7 @@ const LessonPage = () => {
 
       console.log('Nodes updated:', positioned.length)
       setQuestionNodes(positioned)
-      
+
     } catch (error) {
       console.error('Error initializing nodes:', error)
     } finally {
@@ -122,9 +122,9 @@ const LessonPage = () => {
 
   const handleNodeClick = (questionNumber: number) => {
     console.log('Node clicked - Opening question:', questionNumber)
-    
+
     const node = questionNodes.find(n => n.questionNumber === questionNumber)
-    
+
     if (node?.status === 'locked') {
       console.log('Node is locked')
       return
@@ -175,7 +175,7 @@ const LessonPage = () => {
     )
   }
 
-  const maxY = questionNodes.length > 0 
+  const maxY = questionNodes.length > 0
     ? Math.max(...questionNodes.map(n => n.position.y))
     : 0
   const SVG_HEIGHT = maxY + BOTTOM_PADDING

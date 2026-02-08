@@ -1,13 +1,15 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode, useCallback } from 'react';
+import { apiFetch, UserProgress } from '../utils/Utils';
 
 type GamificationContextType = {
   xp: number;
   lives: number;
-  streak: number;
-  level: number;
   addXp: (amount: number) => void;
+  setXp: (value: number) => void;
   loseLife: () => void;
   addLife: () => void;
+  setLives: (value: number) => void;
+  refreshStats: () => Promise<void>;
 };
 
 const GamificationContext = createContext<GamificationContextType | undefined>(undefined);
@@ -28,16 +30,35 @@ export const GamificationProvider = ({ children }: { children: ReactNode }) => {
 
   const [lives, setLives] = useState<number>(() => {
     const stored = localStorage.getItem('lives');
-    return stored ? Number(stored) : 3000;
+    return stored ? Number(stored) : 0;
   });
-
-  const [streak, setStreak] = useState(0);
-  const [level, setLevel] = useState(1);
 
   useEffect(() => {
     localStorage.setItem('xp', String(xp));
     localStorage.setItem('lives', String(lives));
   }, [xp, lives]);
+
+  const refreshStats = useCallback(async () => {
+    const token = localStorage.getItem('access_token');
+    if (!token) return;
+
+    try {
+      console.log('Refreshing stats from backend...');
+      const data = await apiFetch<UserProgress>('/questions/user/progress');
+
+      if (data) {
+        console.log('Stats refreshed:', data);
+        if (data.xp !== undefined) setXp(data.xp);
+        if (data.lives !== undefined) setLives(data.lives);
+      }
+    } catch (error) {
+      console.error('Failed to refresh stats:', error);
+    }
+  }, []);
+
+  useEffect(() => {
+    refreshStats();
+  }, [refreshStats]);
 
   const addXp = (amount: number) => {
     setXp(prev => prev + amount);
@@ -56,11 +77,12 @@ export const GamificationProvider = ({ children }: { children: ReactNode }) => {
       value={{
         xp,
         lives,
-        streak,
-        level,
         addXp,
+        setXp,
         loseLife,
         addLife,
+        setLives,
+        refreshStats,
       }}
     >
       {children}

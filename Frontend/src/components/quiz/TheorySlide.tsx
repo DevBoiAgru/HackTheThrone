@@ -2,15 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import styles from './LessonView.module.css';
+import { QuestionData } from '../../types/QuizTypes';
 
-type QuestionData = {
-    question_number: number
-    content: string
-    section_title: string
-    topic_title: string
-    isQuestion: boolean
-    xp_reward: number
-}
 
 interface TheorySlideProps {
     questionData: QuestionData;
@@ -19,12 +12,12 @@ interface TheorySlideProps {
 
 const TheorySlide = ({ questionData, onTheoryComplete }: TheorySlideProps) => {
     console.log('TheorySlide rendered - Question:', questionData.question_number)
-    
+
     const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleContinue = async () => {
         console.log('Continue clicked - Question:', questionData.question_number)
-        
+
         setIsSubmitting(true);
 
         try {
@@ -62,8 +55,8 @@ const TheorySlide = ({ questionData, onTheoryComplete }: TheorySlideProps) => {
                         {questionData.content}
                     </p>
                 </div>
-                <div style={{ 
-                    marginTop: '1.5rem', 
+                <div style={{
+                    marginTop: '1.5rem',
                     padding: '1rem',
                     background: '#e8f5e9',
                     borderRadius: '8px',
@@ -77,8 +70,8 @@ const TheorySlide = ({ questionData, onTheoryComplete }: TheorySlideProps) => {
                 </div>
             </div>
 
-            <button 
-                className={styles.completeBtn} 
+            <button
+                className={styles.completeBtn}
                 onClick={handleContinue}
                 disabled={isSubmitting}
             >

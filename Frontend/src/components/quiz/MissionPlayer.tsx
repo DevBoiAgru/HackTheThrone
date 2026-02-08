@@ -6,18 +6,9 @@ import styles from './QuizView.module.css';
 import TheorySlide from './TheorySlide';
 import QuizSlide from './QuizSlide';
 import { Chapters } from '../../data/chapters';
-import { callquest, validateAnswer, getuserprog } from '../../utils/Utils';
+import { apiFetch, UserProgress } from '../../utils/Utils';
+import { QuestionData, ValidationResult } from '../../types/QuizTypes';
 
-type QuestionData = {
-    question_number: number
-    content: string
-    section_title: string
-    topic_title: string
-    isQuestion: boolean
-    options?: string[]
-    correct_answer?: string
-    xp_reward: number
-}
 
 interface MissionPlayerProps {
     chapterID: number
@@ -30,7 +21,7 @@ interface MissionPlayerProps {
 const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgressUpdate }: MissionPlayerProps) => {
     console.log('MissionPlayer mounted - Chapter:', chapterID, 'Start:', startQuestionNo)
 
-    const { addXp, loseLife, lives } = useGamification() as any;
+    const { addXp, loseLife, lives } = useGamification();
 
     const [currentQuestionNo, setCurrentQuestionNo] = useState(startQuestionNo);
     const [questionData, setQuestionData] = useState<QuestionData | null>(null);
@@ -49,16 +40,16 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         console.log('Fetching question:', qNo)
         setLoading(true);
         setError('');
-        
+
         try {
-            const data = await callquest(qNo);
-            
+            const data = await apiFetch<QuestionData>(`/questions/${qNo}`);
+
             if (!data) {
                 console.error('No data returned for question:', qNo)
                 setError('Question not available yet. Complete previous questions first.');
                 return;
             }
-            
+
             console.log('Question loaded:', data)
             setQuestionData(data);
         } catch (err) {
@@ -71,7 +62,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
 
     const handleTheoryComplete = async () => {
         console.log('Theory complete - Question:', currentQuestionNo)
-        
+
         if (!questionData) {
             console.error('No question data')
             alert('Error: No question data.')
@@ -80,8 +71,14 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
 
         try {
             console.log('Validating theory...')
-            const validationResult = await validateAnswer(currentQuestionNo, null, true)
-            
+            const validationResult = await apiFetch<ValidationResult>('/questions/validate', {
+                method: 'POST',
+                body: JSON.stringify({
+                    question_number: currentQuestionNo,
+                    answer: ""
+                })
+            });
+
             if (!validationResult) {
                 console.error('Validation failed')
                 alert('Failed to mark theory as complete.')
@@ -89,37 +86,37 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
             }
 
             console.log('Theory validated:', validationResult)
-            
-            const isSuccess = validationResult.status === 'success' || 
-                             (validationResult.message && validationResult.message.toLowerCase().includes('completed'))
-            
+
+            const isSuccess = validationResult.status === 'success' ||
+                (validationResult.message && validationResult.message.toLowerCase().includes('completed'))
+
             if (!isSuccess) {
                 console.error('Theory validation not successful')
                 alert('Failed to complete theory.')
                 return
             }
-            
-            const xpAwarded = 
-                validationResult.xp_awarded || 
-                validationResult.xp || 
-                validationResult.points ||
+
+            const xpAwarded =
+                validationResult.xp_awarded ||
+                (validationResult as any).xp ||
+                (validationResult as any).points ||
                 questionData.xp_reward
-            
+
             console.log('Awarding XP:', xpAwarded)
             addXp(xpAwarded)
-            
+
             console.log('Fetching updated progress...')
-            const progressData = await getuserprog()
+            const progressData = await apiFetch<UserProgress>('/questions/user/progress')
             console.log('Updated progress:', progressData)
-            
+
             // Call parent callback to update map nodes
             if (onProgressUpdate) {
                 console.log('Calling progress update callback')
                 onProgressUpdate()
             }
-            
+
             if (!chapter) return
-            
+
             if (currentQuestionNo >= chapter.quest_end) {
                 console.log('Chapter complete')
                 setIsCompleted(true)
@@ -128,7 +125,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                 console.log('Moving to next question:', nextQ)
                 setCurrentQuestionNo(nextQ)
             }
-            
+
         } catch (err) {
             console.error('Error in handleTheoryComplete:', err)
             alert('An error occurred.')
@@ -139,7 +136,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         console.log('=== ANSWER SUBMIT START ===')
         console.log('Question number:', currentQuestionNo)
         console.log('Selected answer:', selectedAnswer)
-        
+
         if (!questionData) {
             console.error('No question data')
             return { isCorrect: false }
@@ -149,67 +146,62 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
 
         try {
             console.log('Calling validateAnswer...')
-            const validationResult = await validateAnswer(currentQuestionNo, selectedAnswer, false)
-            
+            const validationResult = await apiFetch<ValidationResult>('/questions/validate', {
+                method: 'POST',
+                body: JSON.stringify({
+                    question_number: currentQuestionNo,
+                    answer: selectedAnswer
+                })
+            });
+
             console.log('=== VALIDATION RESULT RECEIVED ===')
             console.log('Result object:', validationResult)
-            
+
             if (!validationResult) {
                 console.error('Validation returned null/undefined')
                 return { isCorrect: false }
             }
 
             console.log('Parsing correctness...')
-            
+
             let isCorrect = false
-            
+
             if (validationResult.message) {
-                const message = validationResult.message.toLowerCase()
-                console.log('Message from backend:', validationResult.message)
-                
-                if (message.includes('correct answer')) {
-                    isCorrect = true
-                } else if (message.includes('incorrect') || message.includes('wrong')) {
-                    isCorrect = false
-                }
+                isCorrect = validationResult.status === 'success'
             }
-            
-            if (validationResult.status === 'success' && !validationResult.message) {
-                isCorrect = true
-            }
-            
+
             console.log('=== FINAL RESULT ===')
             console.log('isCorrect:', isCorrect)
             console.log('==================')
 
             if (isCorrect) {
                 console.log('ANSWER IS CORRECT - Proceeding...')
-                
-                const xpAwarded = 
-                    validationResult.xp_awarded || 
-                    validationResult.xp || 
-                    validationResult.points ||
+
+                const xpAwarded =
+                    validationResult.xp_awarded ||
+                    (validationResult as any).xp ||
+                    (validationResult as any).points ||
                     questionData.xp_reward
-                
+
                 console.log('XP to award:', xpAwarded)
                 addXp(xpAwarded)
                 console.log('XP awarded')
-                
+
                 console.log('Fetching progress...')
-                const progressData = await getuserprog()
+                const progressData = await apiFetch<UserProgress>('/questions/user/progress')
                 console.log('Progress:', progressData)
-                
+
                 // Call parent callback to update map nodes
                 if (onProgressUpdate) {
                     console.log('Calling progress update callback')
                     onProgressUpdate()
                 }
-                
+
                 if (!chapter) {
                     console.log('No chapter, returning')
                     return { isCorrect: true }
                 }
-                
+
                 if (currentQuestionNo >= chapter.quest_end) {
                     console.log('Last question - chapter complete')
                     setIsCompleted(true)
@@ -218,7 +210,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                     console.log('Moving to next:', nextQ)
                     setCurrentQuestionNo(nextQ)
                 }
-                
+
             } else {
                 console.log('ANSWER IS INCORRECT - Losing life')
                 loseLife()
@@ -227,7 +219,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
 
             console.log('Returning result:', { isCorrect })
             return { isCorrect }
-            
+
         } catch (err) {
             console.error('Exception in handleAnswerSubmit:', err)
             return { isCorrect: false }

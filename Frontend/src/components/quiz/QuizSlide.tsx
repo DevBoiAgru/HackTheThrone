@@ -3,17 +3,8 @@ import { motion } from 'framer-motion';
 import { Check, X, ArrowRight, AlertTriangle } from 'lucide-react';
 import { clsx } from 'clsx';
 import styles from './QuizView.module.css';
+import { QuestionData } from '../../types/QuizTypes';
 
-type QuestionData = {
-    question_number: number
-    content: string
-    section_title: string
-    topic_title: string
-    isQuestion: boolean
-    options?: string[]
-    correct_answer?: string
-    xp_reward: number
-}
 
 interface QuizSlideProps {
     questionData: QuestionData;
@@ -22,7 +13,7 @@ interface QuizSlideProps {
 
 const QuizSlide = ({ questionData, onAnswerSubmit }: QuizSlideProps) => {
     console.log('QuizSlide rendered - Question:', questionData.question_number)
-    
+
     const [selectedOption, setSelectedOption] = useState<string | null>(null);
     const [answerState, setAnswerState] = useState<'correct' | 'incorrect' | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,13 +35,13 @@ const QuizSlide = ({ questionData, onAnswerSubmit }: QuizSlideProps) => {
         if (!selectedOption || isSubmitting) return
 
         console.log('Check answer clicked - Selected:', selectedOption, 'Correct:', questionData.correct_answer)
-        
+
         setIsSubmitting(true);
 
         try {
             const result = await onAnswerSubmit(selectedOption);
             console.log('Result received:', result)
-            
+
             if (result.isCorrect) {
                 console.log('Correct answer')
                 setAnswerState('correct');
@@ -88,7 +79,7 @@ const QuizSlide = ({ questionData, onAnswerSubmit }: QuizSlideProps) => {
             <div className={styles.optionsGrid}>
                 {questionData.options?.map((option, index) => {
                     let stateClass = '';
-                    
+
                     if (answerState && option === selectedOption) {
                         stateClass = answerState === 'correct' ? styles.correct : styles.incorrect;
                     } else if (answerState && option === questionData.correct_answer) {
