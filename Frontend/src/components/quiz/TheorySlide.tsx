@@ -40,7 +40,7 @@ const TheorySlide = ({ questionData, onTheoryComplete }: TheorySlideProps) => {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
                     <div style={{ fontSize: '3rem' }}>📖</div>
                     <div>
-                        <div style={{ fontSize: '0.9rem', color: '#1c1b1b' }}>
+                        <div style={{ fontSize: '0.9rem', color: '#888' }}>
                             {questionData.section_title}
                         </div>
                         <h1 className={styles.title}>{questionData.topic_title}</h1>
@@ -51,19 +51,19 @@ const TheorySlide = ({ questionData, onTheoryComplete }: TheorySlideProps) => {
             <div className={styles.contentCard}>
                 <h2>Mission Briefing</h2>
                 <div className={styles.textContent}>
-                    <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#a5a5a5' }}>
+                    <p style={{ fontSize: '1.1rem', lineHeight: '1.8', color: '#333' }}>
                         {questionData.content}
                     </p>
                 </div>
                 <div style={{
                     marginTop: '1.5rem',
                     padding: '1rem',
-                    background: '#212121',
+                    background: '#e8f5e9',
                     borderRadius: '8px',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.5rem',
-                    color: '#3a5d3a'
+                    color: '#2e7d32'
                 }}>
                     <span style={{ fontSize: '1.5rem' }}>📖</span>
                     <span>+{questionData.xp_reward} XP for reading</span>

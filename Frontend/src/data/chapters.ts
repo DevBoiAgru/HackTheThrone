@@ -3383,3 +3383,85 @@ export const allQuestions :Slide[] = [
 //         content: []
 //     }
 // ];
+
+export const cybersecurityFacts = [
+  "Cybercrime is set to cost businesses up to $10.5 trillion by 2025 and could reach as high as $15.63 trillion by 2029.",
+  "Research suggests there's a worrying correlation between digital transformation and data breaches.",
+  "Cybercrime costs are expected to escalate worldwide to almost $14 trillion by 2028.",
+  "The industrial sector is experiencing the highest increase in data breach costs, rising by $830,000 on average year-on-year.",
+  "Data breach costs are projected to be the highest in the U.S., followed by the Middle East, Benelux, and Germany.",
+  "All four territories (U.S., Middle East, Benelux, and Germany) experience costs higher than the global average of $4.88 million, with the U.S. paying almost double this amount.",
+  "Phishing attacks currently cost companies an average of $4.88 million to bounce back from.",
+  "BEC attacks have already cost businesses more than $55 billion over a decade.",
+  "Insurance carriers report an average loss of around $100,000 per claim.",
+  "Written, direct premiums for cyber insurance are expected to reach $23 billion by the end of the year.",
+  "On average, small businesses can expect to pay $120,000 to recover from a cyberattack.",
+  "At least six in ten businesses are raising their prices to help recover the costs incurred by cyberattacks.",
+  "Businesses are paying $53,000 per hour, on average, due to downtime caused by ransomware.",
+  "The average cost of downtime from a DDoS (Distributed Denial of Service) attack is $6,130 per minute.",
+  "The cost of recovering from a ransomware attack is currently, on average, ten times as much as the amount attackers demand in ransom.",
+  "Cybersecurity ranks as the #2 biggest business threat to SMBs in 2025.",
+  "Ransomware attacks are more than doubling year-on-year.",
+  "The median time between hacker access and ransomware launch is 6.11 days for assumed and confirmed attacks.",
+  "Transport for London suffered one of the highest-profile ransomware attacks, resulting in the loss of traveler contact details, Oyster card information, and bank numbers of up to 5,000 people.",
+  "The healthcare industry reports the most expensive breaches at an average of $9.8 million – remaining at the top of industry costs for over a decade.",
+  "More than 630 ransomware attacks affected healthcare bodies in a single year.",
+  "Tools such as ChatGPT that are available for free to the public can generate up to 30 phishing email templates every hour.",
+  "The FBI's IC3 department recently reported almost 21,500 complaints regarding BEC attacks in one year, with losses estimating more than $2.9 billion.",
+  "Over half of all cloud breaches occur in part due to human error.",
+  "Experts recently discovered 612 new, unique common vulnerabilities and exposures (CVEs) in one quarter.",
+  "Operating systems with the most recorded CVEs include Debian Linux (8,809), Android (7,245), Linux Kernel (6,010), and Fedora (5,122).",
+  "Vulnerabilities within the MoveIt framework exposed more than 93 million sensitive records.",
+  "Industries most affected by MoveIt vulnerabilities included education, health, and finance.",
+  "High-profile data breaches arising recently include Ticketmaster, which saw 560 million people's details compromised and up for sale online.",
+  "On average, cross-industry, it takes companies 204 days to spot a data breach and 73 days to contain it.",
+  "Financial companies take an average of 177 days to identify breaches, and 56 days to contain them.",
+  "Across a decade, the number of U.S. data compromises per year increased from 614 to 3,205.",
+  "U.S. data breaches impacted an estimated 353 million individuals in one year alone.",
+  "The cost per capita of a data breach is increasing by around 1 USD per year.",
+  "Companies that find and contain data breaches within 200 days are saving $1 million more than those that don't.",
+  "It takes companies in the healthcare industry longer than any other to contain breaches.",
+  "It takes entertainment businesses up to 287 days on average to detect a data breach compared to healthcare businesses' average of 255 days.",
+  "The healthcare industry is the third-most attacked worldwide.",
+  "The average cost of a data breach in healthcare was $9.77 million in 2024.",
+  "Financial services are the third-most attacked industry based on phishing alone.",
+  "The average financial services firm pays $5.9 million per data breach.",
+  "The average cost of a data breach in financial services ranges from $5.86 to $6.08 million.",
+  "The average cost of a data breach in the manufacturing industry in 2024 was $5.56 million.",
+  "Each day of downtime costs schools up to $550,000.",
+  "The average cost of a data breach for higher-ed bodies is around $3.65 million.",
+  "Data breaches through ransomware cost the education sector more than $53 billion in downtime over a five-year period.",
+  "The average data breach cost in the retail industry is $3.48 million.",
+  "More than half of auto service cybersecurity leaders expect at least a full day of downtime for essential systems like payment processing, scheduling, or service bays after a cyberattack.",
+  "Research shows yearly spending is estimated at $183.9 billion.",
+  "Investment in security services is expected to grow more than investment in software or network security.",
+  "The AI cybersecurity market is set to exceed $133 billion by 2030.",
+  "Identity and access management, a type of zero-trust security strategy, is set to exceed market worth of $24.1 billion by the year's end.",
+  "The cybersecurity industry has a talent shortage of four million professionals.",
+  "Up to 570,000 cybersecurity roles remain unfilled in the U.S. alone.",
+  "Texas, Florida, California, Colorado, Illinois, Virginia, Maryland, and New York are the states with the most U.S. cybersecurity openings.",
+  "Up to 17,300 new jobs for IT security analysts are projected to open each year across the next decade.",
+  "It's predicted GenAI will remove the need for specialized education for up to half of all entry-level roles in cybersecurity by 2028.",
+  "The worldwide zero trust security market is projected to be worth almost $133 billion by 2032.",
+  "The market size for cybersecurity insurance is set to top $20 billion.",
+  "Google Cloud predicts major threats to cybersecurity in 2025 include AI attacks, continued disruption through ransomware, and evolving threats against Web3 companies.",
+  "Hundreds of millions of commercial and private devices will become vulnerable with Microsoft ending support for its Windows 10 operating system in October 2025.",
+  "Research suggests more than 2,300 unique cyberattacks occur every day.",
+  "There are at least 23,900 known cybersecurity vulnerabilities that could encourage these attacks.",
+  "BEC attacks rely on human error and misjudgment and are responsible for more than half of all social engineering attacks.",
+  "Verizon research further claims around 3,661 social engineering attacks were accounted for in its broad study, with 3,032 disclosing data.",
+  "2021 was a huge year for cyberattacks – bolstered by the enormous data breach affecting the social media developer RockYou, which lost 8.4 billion passwords, affecting 32 million different accounts.",
+  "Gartner research predicts that the cybersecurity market will expand to $212 billion by the end of the year."
+];
+
+// 
+export const getRandomFact = (): string => {
+  const randomIndex = Math.floor(Math.random() * cybersecurityFacts.length);
+  return cybersecurityFacts[randomIndex];
+};
+
+// Helper function to get multiple random facts
+export const getRandomFacts = (count: number): string[] => {
+  const shuffled = [...cybersecurityFacts].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, Math.min(count, cybersecurityFacts.length));
+};

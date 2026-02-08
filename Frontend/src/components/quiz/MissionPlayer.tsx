@@ -15,13 +15,13 @@ interface MissionPlayerProps {
     startQuestionNo: number
     onComplete: () => void
     onExit: () => void
-    onProgressUpdate?: () => void  // NEW PROP - Optional callback to update parent
+    onProgressUpdate?: () => void
 }
 
 const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgressUpdate }: MissionPlayerProps) => {
     console.log('MissionPlayer mounted - Chapter:', chapterID, 'Start:', startQuestionNo)
 
-    const { addXp, loseLife, lives } = useGamification();
+    const { addXp, lives, syncWithBackend } = useGamification() as any;
 
     const [currentQuestionNo, setCurrentQuestionNo] = useState(startQuestionNo);
     const [questionData, setQuestionData] = useState<QuestionData | null>(null);
@@ -36,6 +36,14 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         fetchQuestion(currentQuestionNo);
     }, [currentQuestionNo]);
 
+    // Check lives on mount and after each question
+    useEffect(() => {
+        console.log('Current lives:', lives)
+        if (lives <= 0) {
+            console.log('No lives remaining - showing game over')
+        }
+    }, [lives]);
+
     const fetchQuestion = async (qNo: number) => {
         console.log('Fetching question:', qNo)
         setLoading(true);
@@ -46,15 +54,21 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
 
             if (!data) {
                 console.error('No data returned for question:', qNo)
-                setError('Question not available yet. Complete previous questions first.');
+                setError('This question is locked. Complete previous questions first.');
                 return;
             }
 
             console.log('Question loaded:', data)
             setQuestionData(data);
-        } catch (err) {
+        } catch (err: any) {
             console.error('Error in fetchQuestion:', err);
-            setError('Failed to load question.');
+            
+            // Check if it's a 403 error
+            if (err.message && (err.message.includes('403') || err.message.includes('locked'))) {
+                setError('🔒 This question is locked. Complete previous questions first.');
+            } else {
+                setError('Failed to load question.');
+            }
         } finally {
             setLoading(false);
         }
@@ -101,15 +115,10 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                 (validationResult as any).xp ||
                 (validationResult as any).points ||
                 questionData.xp_reward
-
-            console.log('Awarding XP:', xpAwarded)
+            
+            console.log('Awarding XP for theory:', xpAwarded)
             addXp(xpAwarded)
-
-            console.log('Fetching updated progress...')
-            const progressData = await apiFetch<UserProgress>('/questions/user/progress')
-            console.log('Updated progress:', progressData)
-
-            // Call parent callback to update map nodes
+            
             if (onProgressUpdate) {
                 console.log('Calling progress update callback')
                 onProgressUpdate()
@@ -136,12 +145,14 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         console.log('=== ANSWER SUBMIT START ===')
         console.log('Question number:', currentQuestionNo)
         console.log('Selected answer:', selectedAnswer)
+
+        console.log('Current lives before submit:', lives)
+        
+
         if (!questionData) {
             console.error('No question data')
             return { isCorrect: false }
         }
-
-        console.log('Correct answer from question data:', questionData.correct_answer)
 
         try {
             console.log('Calling validateAnswer...')
@@ -157,12 +168,13 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
             console.log('Result object:', validationResult)
 
             if (!validationResult) {
-                console.error('Validation returned null/undefined')
+                console.error('Validation returned null')
                 return { isCorrect: false }
             }
 
             console.log('Parsing correctness...')
 
+            // Determine if answer is correct
             let isCorrect = false
 
             if (validationResult.message) {
@@ -191,31 +203,71 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                 console.log('Progress:', progressData)
 
                 // Call parent callback to update map nodes
+                const message = validationResult.message.toLowerCase()
+                console.log('Backend message:', message)
+                
+                if (message.includes('correct answer') || message.includes('correct!')) {
+                    isCorrect = true
+                } else if (message.includes('incorrect') || message.includes('wrong')) {
+                    isCorrect = false
+                }
+            }
+            
+            // Additional check for status
+            if (validationResult.status === 'success') {
+                isCorrect = true
+            }
+            
+            console.log('=== IS CORRECT:', isCorrect, '===')
+
+            if (isCorrect) {
+                console.log('✓ CORRECT ANSWER')
+                
+                // ONLY give XP for correct answers
+                const xpAwarded = 
+                    validationResult.xp_awarded || validationResult.lives_remaining || validationResult.new_xp ||questionData.xp_reward
+                
+                console.log('Adding XP:', xpAwarded)
+                addXp(xpAwarded)
+                
+                // Sync with backend to ensure lives are current
+                console.log('Syncing with backend after correct answer...')
+                await syncWithBackend()
+                
                 if (onProgressUpdate) {
-                    console.log('Calling progress update callback')
                     onProgressUpdate()
                 }
 
                 if (!chapter) {
-                    console.log('No chapter, returning')
                     return { isCorrect: true }
                 }
+
                 if (currentQuestionNo >= chapter.quest_end) {
-                    console.log('Last question - chapter complete')
+                    console.log('Chapter complete')
                     setIsCompleted(true)
                 } else {
                     const nextQ = currentQuestionNo + 1
-                    console.log('Moving to next:', nextQ)
+                    console.log('Moving to next question:', nextQ)
                     setCurrentQuestionNo(nextQ)
                 }
 
             } else {
-                console.log('ANSWER IS INCORRECT - Losing life')
-                loseLife()
-                console.log('Life lost')
+                console.log('✗ WRONG ANSWER')
+                
+                // DO NOT give XP for wrong answers
+                console.log('No XP awarded for wrong answer')
+                
+                // Sync with backend to get updated lives
+                console.log('Syncing lives from backend after wrong answer...')
+                await syncWithBackend()
+                
+                // Check lives after sync
+                console.log('Lives after sync:', lives)
+                
+                // The QuizSlide component will show retry button
+                // User stays on same question
             }
 
-            console.log('Returning result:', { isCorrect })
             return { isCorrect }
 
         } catch (err) {
@@ -230,15 +282,18 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         onComplete();
     };
 
-    if (lives === 0) {
+    // Check lives BEFORE showing game over
+    if (lives <= 0) {
         return (
             <div className={styles.quizContainer} style={{ textAlign: 'center' }}>
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                 >
-                    <h1>SYSTEM FAILURE</h1>
+                    <h1 style={{ color: '#f44336', marginBottom: '1rem' }}>GAME OVER</h1>
                     <p>You ran out of lives.</p>
+                    <p style={{ fontSize: '3rem', margin: '2rem 0' }}>💀</p>
+                    <p style={{ marginBottom: '2rem' }}>Lives: {lives}</p>
                     <button className={styles.checkBtn} onClick={onExit}>
                         Return to Map
                     </button>
@@ -274,7 +329,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                     animate={{ opacity: 1 }}
                 >
                     <h2 style={{ color: '#f44336', marginBottom: '1rem' }}>Access Denied</h2>
-                    <p>{error}</p>
+                    <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>{error}</p>
                     <button className={styles.checkBtn} onClick={onExit} style={{ marginTop: '2rem' }}>
                         Return to Map
                     </button>
@@ -302,9 +357,9 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                 style={{
                     position: 'absolute',
                     top: '20px',
-                    left: '285px',
+                    right: '20px',
                     background: 'rgba(0,0,0,0.5)',
-                    border: 'none',
+                    border: '1px solid rgba(255,255,255,0.3)',
                     borderRadius: '50%',
                     width: '40px',
                     height: '40px',
@@ -313,12 +368,33 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
                     justifyContent: 'center',
                     cursor: 'pointer',
                     zIndex: 1000,
-                    color: 'white'
+                    color: 'white',
+                    transition: 'all 0.2s'
                 }}
                 title="Exit to Map"
             >
                 <X size={24} />
             </button>
+
+            {/* Lives Display */}
+            <div style={{
+                position: 'absolute',
+                top: '20px',
+                left: '20px',
+                background: 'rgba(0,0,0,0.7)',
+                padding: '10px 20px',
+                borderRadius: '10px',
+                border: '1px solid rgba(255,255,255,0.2)',
+                zIndex: 1000
+            }}>
+                <span style={{ 
+                    fontSize: '1.2rem', 
+                    color: lives <= 2 ? '#f44336' : '#fff',
+                    fontWeight: 'bold'
+                }}>
+                    ❤️ {lives}
+                </span>
+            </div>
 
             <div className={styles.progress}>
                 <div

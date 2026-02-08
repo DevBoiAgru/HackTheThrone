@@ -2,6 +2,7 @@ import { Chapters } from '../data/chapters';
 import { useNavigate } from 'react-router-dom';
 import styles from './home.module.css'
 import { url } from '../data/constant';
+import { getRandomFact,cybersecurityFacts } from '../data/chapters';
 // import { div, section } from 'framer-motion/client';
 
 import { Terminal } from 'lucide-react';
@@ -27,8 +28,7 @@ const Home = () => {
             <div
                 key={sections.id}
                 onClick={() => handlesectionClick(sections)}
-                className={styles.card}
-            >
+                className={styles.card}>
                 <h2 className={styles.title}>{sections.title}</h2>
                 {/* <div className={styles.brief}>{sections.brief}</div> */}
                 <div className={styles.description}>{sections.description}</div>
@@ -38,14 +38,10 @@ const Home = () => {
 
         <div className={styles.rightPanel}  >
             <div className={styles.fact}>
-            <h1>Fact of the day!!</h1>
-            <span>
-                The internet didn’t make humans smarter or dumber. It just forced ancient
-                survival instincts to run at broadband speed, with pop-ups.
-            </span>
-            <span className={styles.factbottom}>
-                we will be having a fact each day!!
-            </span>
+                <h1>Did you know??</h1>
+                <span>
+                    {getRandomFact()}
+                </span>
             </div>
 
             <div className={styles.practice}>
