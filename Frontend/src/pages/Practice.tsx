@@ -4,7 +4,7 @@ import QuizSlide from '../components/quiz/QuizSlide';
 import type { Slide } from '../data/chapters';
 import { useGamification } from '../context/GamificationContext';
 const Practice = () => {
-  const { addXp, loseLife } = useGamification();
+  const { addXp, loseLife, lives } = useGamification();
   const slides: Slide[] = useMemo(() => {
     const copy = [...allQuestions];
     for (let i = copy.length - 1; i > 0; i--) {

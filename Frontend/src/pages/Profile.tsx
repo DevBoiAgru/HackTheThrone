@@ -1,6 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { useGamification } from '../context/GamificationContext';
 import { hashicon } from '@emeraldpay/hashicon';
 import type { UserProgress } from '../types/QuizTypes';
 import { apiFetch } from '../utils/Utils';
@@ -10,11 +9,12 @@ import { clsx } from 'clsx';
 import Skeleton from '../components/ui/Skeleton';
 
 const Profile = () => {
-    const { xp, lives } = useGamification();
     const username = localStorage.getItem('username') || 'Anonymous';
 
     const [solvedQuestions, setSolvedQuestions] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
+    const [userXP, setUserXP] = useState(0);
+    const [userLives, setUserLives] = useState(0);
 
     const avatarRef = useRef<HTMLDivElement>(null);
 
@@ -33,6 +33,8 @@ const Profile = () => {
             const response = await apiFetch<UserProgress>(`/questions/user/progress`);
             if (response) {
                 setSolvedQuestions(response.completed_questions.length);
+                setUserXP(response.xp);
+                setUserLives(response.lives);
             }
             setIsLoading(false);
         };
@@ -59,7 +61,7 @@ const Profile = () => {
                         whileHover={{ scale: 1.05 }}
                     >
                         <Hexagon className={styles.statIcon} color="var(--accent-blue)" />
-                        <span className={styles.statValue}>{xp}</span>
+                        <span className={styles.statValue}>{userXP}</span>
                         <span className={styles.statLabel}>Total XP</span>
                     </motion.div>
 
@@ -68,7 +70,7 @@ const Profile = () => {
                         whileHover={{ scale: 1.05 }}
                     >
                         <Heart className={styles.statIcon} color="#f44336" />
-                        <span className={styles.statValue}>{lives}</span>
+                        <span className={styles.statValue}>{userLives}</span>
                         <span className={styles.statLabel}>Lives</span>
                     </motion.div>
                 </div>

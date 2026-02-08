@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Map, Shield, User, Terminal,LogOut } from 'lucide-react';
+import { Map, Shield, User, Terminal, LogOut } from 'lucide-react';
 import styles from './Sidebar.module.css';
 import { clsx } from 'clsx';
 
@@ -9,12 +9,11 @@ const Sidebar = () => {
     const navItems = [
         { icon: Map, label: 'Learn', path: '/' },
         { icon: Shield, label: 'Leaderboard', path: '/leaderboard' },
-        { icon: Terminal, label: 'Practice', path: '/practice' },
         { icon: User, label: 'Profile', path: '/profile' },
     ];
 
-    const handleLogout=()=>{
-        localStorage.removeItem('username')
+    const handleLogout = () => {
+        localStorage.clear();
         window.location.reload();
     }
 
@@ -37,7 +36,7 @@ const Sidebar = () => {
                     </Link>
                 ))}
                 <button className={styles.logout} onClick={handleLogout}>
-                    <LogOut size={24}/>
+                    <LogOut size={24} />
                     <span className={styles.navLabel}>Logout</span>
                 </button>
             </nav>
