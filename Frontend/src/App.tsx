@@ -7,6 +7,7 @@ import Login from './components/login/Login';
 // import Topicpage from './pages/Topicpage';
 import Practice from './pages/Practice';
 import Leaderboard from './pages/Leaderboard';
+import Profile from './pages/Profile';
 
 function App() {
   const username = localStorage.getItem('username');
@@ -22,7 +23,7 @@ function App() {
             {/* <Route path="lesson/:chapterID/topic/:topicid" element={<Topicpage />} /> */}
             <Route path="leaderboard" element={<Leaderboard />} />
             <Route path="practice" element={<Practice />} />
-            <Route path="profile" element={<div>Profile (Coming Soon)</div>} />
+            <Route path="profile" element={<Profile />} />
           </Route>
         </Routes>
       </Router>

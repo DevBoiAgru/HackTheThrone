@@ -4,6 +4,7 @@ import MissionPlayer from '../components/quiz/MissionPlayer'
 import { Chapters } from '../data/chapters'
 import { useParams } from 'react-router-dom'
 import { positionOnVerticalSineWave, apiFetch, UserProgress } from '../utils/Utils'
+import LessonMapSkeleton from '../components/map/LessonMapSkeleton'
 
 const SVG_WIDTH = 100
 const BOTTOM_PADDING = 120
@@ -159,13 +160,7 @@ const LessonPage = () => {
     )
   }
 
-  if (loading && questionNodes.length === 0) {
-    return (
-      <div className="container" style={{ textAlign: 'center', paddingTop: 100 }}>
-        <h1>Loading...</h1>
-      </div>
-    )
-  }
+  // Loading state now handled inline within the map area
 
   if (activeMission !== null) {
     console.log('Rendering MissionPlayer for question:', activeMission)
@@ -213,47 +208,53 @@ const LessonPage = () => {
           margin: '0 auto'
         }}
       >
-        <svg
-          viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`}
-          preserveAspectRatio="xMidYMin meet"
-          style={{
-            position: 'absolute',
-            inset: 0,
-            width: '100%',
-            height: '100%',
-            zIndex: 0,
-            pointerEvents: 'none'
-          }}
-        >
-          {questionNodes.map((node, i) => {
-            if (i === questionNodes.length - 1) return null
-            const next = questionNodes[i + 1]
+        {loading && questionNodes.length === 0 ? (
+          <LessonMapSkeleton />
+        ) : (
+          <>
+            <svg
+              viewBox={`0 0 ${SVG_WIDTH} ${SVG_HEIGHT}`}
+              preserveAspectRatio="xMidYMin meet"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                zIndex: 0,
+                pointerEvents: 'none'
+              }}
+            >
+              {questionNodes.map((node, i) => {
+                if (i === questionNodes.length - 1) return null
+                const next = questionNodes[i + 1]
 
-            return (
-              <line
-                key={`line-${node.questionNumber}`}
-                x1={2.5 * nodePositionOptions.amplitude + 6.5 * node.position.x}
-                y1={0.75 * nodePositionOptions.startY + node.position.y}
-                x2={2.5 * nodePositionOptions.amplitude + 6.5 * next.position.x}
-                y2={0.75 * nodePositionOptions.startY + next.position.y}
-                stroke="rgba(255,255,255,0.25)"
-                strokeWidth="2"
-                strokeDasharray="6 6"
-                strokeLinecap="round"
+                return (
+                  <line
+                    key={`line-${node.questionNumber}`}
+                    x1={2.5 * nodePositionOptions.amplitude + 6.5 * node.position.x}
+                    y1={0.75 * nodePositionOptions.startY + node.position.y}
+                    x2={2.5 * nodePositionOptions.amplitude + 6.5 * next.position.x}
+                    y2={0.75 * nodePositionOptions.startY + next.position.y}
+                    stroke="rgba(255,255,255,0.25)"
+                    strokeWidth="2"
+                    strokeDasharray="6 6"
+                    strokeLinecap="round"
+                  />
+                )
+              })}
+            </svg>
+
+            {questionNodes.map((node) => (
+              <LevelNode
+                key={node.questionNumber}
+                questionNumber={node.questionNumber}
+                position={node.position}
+                status={node.status}
+                onClick={handleNodeClick}
               />
-            )
-          })}
-        </svg>
-
-        {questionNodes.map((node) => (
-          <LevelNode
-            key={node.questionNumber}
-            questionNumber={node.questionNumber}
-            position={node.position}
-            status={node.status}
-            onClick={handleNodeClick}
-          />
-        ))}
+            ))}
+          </>
+        )}
       </div>
     </div>
   )

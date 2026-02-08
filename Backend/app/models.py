@@ -8,7 +8,7 @@ class User(Base):
     username = Column(String, unique=True, index=True, nullable=False)
     hashed_password = Column(String, nullable=False)
     xp = Column(Integer, default=0)
-    lives = Column(Integer, default=5000)
+    lives = Column(Integer, default=5)
 
 class UserProgress(Base):
     __tablename__ = "user_progress"

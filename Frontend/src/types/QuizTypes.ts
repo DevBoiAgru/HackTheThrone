@@ -23,3 +23,10 @@ export type ValidationResult = {
     lives_remaining: number;
     message: string;
 };
+
+export type UserProgress = {
+    user_id: number;
+    xp: number;
+    lives: number;
+    completed_questions: number[];
+};

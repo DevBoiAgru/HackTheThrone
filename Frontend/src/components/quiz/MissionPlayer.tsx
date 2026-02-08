@@ -8,6 +8,7 @@ import QuizSlide from './QuizSlide';
 import { Chapters } from '../../data/chapters';
 import { apiFetch, UserProgress } from '../../utils/Utils';
 import { QuestionData, ValidationResult } from '../../types/QuizTypes';
+import MissionSkeleton from './MissionSkeleton';
 
 
 interface MissionPlayerProps {
@@ -338,13 +339,7 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
         );
     }
 
-    if (loading || !questionData) {
-        return (
-            <div className={styles.quizContainer} style={{ textAlign: 'center' }}>
-                <h2>Loading...</h2>
-            </div>
-        );
-    }
+    // Loading state now handled inline within the content area
 
     const totalQuestions = chapter ? chapter.quest_end - chapter.quest_start + 1 : 1;
     const currentIndex = chapter ? currentQuestionNo - chapter.quest_start : 0;
@@ -404,7 +399,9 @@ const MissionPlayer = ({ chapterID, startQuestionNo, onComplete, onExit, onProgr
             </div>
 
             <AnimatePresence mode="wait">
-                {questionData.isQuestion ? (
+                {loading || !questionData ? (
+                    <MissionSkeleton key="loading-mission" />
+                ) : questionData.isQuestion ? (
                     <QuizSlide
                         key={questionData.question_number}
                         questionData={questionData}
