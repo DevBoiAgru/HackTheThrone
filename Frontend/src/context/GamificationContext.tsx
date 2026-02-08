@@ -34,17 +34,9 @@ export const GamificationProvider = ({ children }: { children: ReactNode }) => {
   });
 
   useEffect(() => {
-<<<<<<< Updated upstream
     localStorage.setItem('xp', String(xp));
     localStorage.setItem('lives', String(lives));
   }, [xp, lives]);
-=======
-    if (!loading) {
-      console.log('XP changed, saving to localStorage:', xp)
-      localStorage.setItem('xp', String(xp));
-    }
-  }, [xp, loading]);
->>>>>>> Stashed changes
 
   const refreshStats = useCallback(async () => {
     const token = localStorage.getItem('access_token');
