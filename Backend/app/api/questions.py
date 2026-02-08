@@ -30,8 +30,7 @@ async def load_questions():
         data = json.load(f)
         questions = data.get("questions", [])
         
-    # Cache for 1 hour (3600s) as questions don't change often
-    await redis.setex(cache_key, 3600, json.dumps(questions))
+    await redis.setex(cache_key, 24*3600, json.dumps(questions))
     return questions
 
 @router.get("/{question_num}", response_model=QuestionResponse)

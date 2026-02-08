@@ -26,6 +26,6 @@ async def get_leaderboard(db: Session = Depends(get_db), current_user: User = De
     leaderboard = [{"username": user.username, "xp": user.xp} for user in top_users]
     
     # Store in cache with 60s expiration
-    await redis.setex(cache_key, 60, json.dumps(leaderboard))
+    await redis.setex(cache_key, 300, json.dumps(leaderboard))
     
     return leaderboard
