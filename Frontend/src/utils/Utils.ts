@@ -47,12 +47,18 @@ interface PositionedNode { position: Position }
 
 export function positionOnVerticalSineWave<T extends PositionedNode>(
   nodes: T[],
-  options: { amplitude?: number; verticalGap?: number; startY?: number; phaseOffset?: number } = {}
+  options: { amplitude?: number; verticalGap?: number; frequency?: number; startY?: number; phaseOffset?: number } = {}
 ): T[] {
-  const { amplitude = 80, verticalGap = 130, startY = 50, phaseOffset = 0 } = options;
+  const {
+    amplitude = options.amplitude || 0,
+    verticalGap = options.verticalGap || 100,
+    frequency = options.frequency || 0.2,
+    startY = options.startY || 50,
+    phaseOffset = options.phaseOffset || 0
+  } = options;
 
   return nodes.map((node, index) => {
-    const theta = index * Math.PI + Math.PI / 2 + phaseOffset;
+    const theta = index * frequency * Math.PI + phaseOffset;
     return {
       ...node,
       position: {

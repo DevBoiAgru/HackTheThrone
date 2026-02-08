@@ -23,6 +23,14 @@ const LessonPage = () => {
 
   const chapter = Chapters.find(c => c.id === Number(chapterID))
 
+  const nodePositionOptions = {
+    amplitude: 20,
+    verticalGap: 110,
+    startY: 50,
+    frequency: 0.2,
+    phaseOffset: 0
+  }
+
   useEffect(() => {
     console.log('LessonPage mounted - Chapter:', chapterID)
     initializeNodes()
@@ -104,11 +112,8 @@ const LessonPage = () => {
         }
       )
 
-      const positioned = positionOnVerticalSineWave(nodes, {
-        amplitude: 20,
-        verticalGap: 100,
-        startY: 50
-      })
+      // Position nodes on vertical sine wave
+      const positioned = positionOnVerticalSineWave(nodes, nodePositionOptions)
 
       console.log('Nodes updated:', positioned.length)
       setQuestionNodes(positioned)
@@ -227,10 +232,10 @@ const LessonPage = () => {
             return (
               <line
                 key={`line-${node.questionNumber}`}
-                x1={50 + node.position.x}
-                y1={node.position.y}
-                x2={50 + next.position.x}
-                y2={next.position.y}
+                x1={2.5 * nodePositionOptions.amplitude + 6.5 * node.position.x}
+                y1={0.75 * nodePositionOptions.startY + node.position.y}
+                x2={2.5 * nodePositionOptions.amplitude + 6.5 * next.position.x}
+                y2={0.75 * nodePositionOptions.startY + next.position.y}
                 stroke="rgba(255,255,255,0.25)"
                 strokeWidth="2"
                 strokeDasharray="6 6"
